@@ -1,8 +1,8 @@
 ---
-name: Diagon Alley
+name: Hollywood
 type: area
 layout: index
-cover: da.jpg
-icon: da.jpg
+cover: hw.jpg
+icon: hw.jpg
 ---
 <h1>Test</h1>   

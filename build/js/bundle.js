@@ -68,33 +68,6 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -1486,10 +1459,43 @@ if (true) {
 }
 })(this || (typeof window !== 'undefined' ? window : global));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+module.exports = {"title":"Static, Meet Dynamic.","description":"[This Repo](https://github.com/BryanSchuetz/vue-jekyll) is a bare-bones template for building static sites that leverage a client-side JS framework for dynamic functionality. It uses [NPM](https://www.npmjs.com/), [Webpack](https://webpack.js.org), [Vue](https://vuejs.org), and [Jekyll](https://jekyllrb.com). It uses **NPM (and Bundler)** to manage the project's dependencies, and improve the development workflow. It uses **Webpack** to roll up and transpile all the individual modules and components into a single bundeled JS file. It uses **Jekyll** to bring it all together, build the site, and serve an initial static file to the browser. It uses **Vue** to render pages on the client side (if JS is supported), and provide any additional dynamic functionality that may be needed.\n","combination":"Take the best parts of a static site workflow and combine them with the new hotness of a client side framework. What you end up with is a great new way to publish content on the modern web. Isomorphic blah blah blah: Use Jekyll to publish the site's pages, and the JSON data behind them—use Vue to build the same pages with the same data. Serve the first static page to the user—if JS is supported, just send the JSON down the wire and build the rest of the pages/content with Vue. If there's no JS support, continue to send pre-rendered static pages down the wire.\n","staticBenefits":["speed (cdn/pre-rendered)","cacheability","reliability","developer workflow"],"dynamicBenefits":["speed (ui/ux)","isomorphic rendering","complex state management","dynamic components"]}
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -1679,47 +1685,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(5)(
-  /* script */
-  __webpack_require__(11),
-  /* template */
-  __webpack_require__(17),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/Users/joshimbriani/Programming/ghostlyswoosh/components/app.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] app.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-f3f39ae0", Component.options)
-  } else {
-    hotAPI.reload("data-v-f3f39ae0", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
 /* 4 */
-/***/ (function(module, exports) {
-
-module.exports = {"title":"Static, Meet Dynamic.","description":"[This Repo](https://github.com/BryanSchuetz/vue-jekyll) is a bare-bones template for building static sites that leverage a client-side JS framework for dynamic functionality. It uses [NPM](https://www.npmjs.com/), [Webpack](https://webpack.js.org), [Vue](https://vuejs.org), and [Jekyll](https://jekyllrb.com). It uses **NPM (and Bundler)** to manage the project's dependencies, and improve the development workflow. It uses **Webpack** to roll up and transpile all the individual modules and components into a single bundeled JS file. It uses **Jekyll** to bring it all together, build the site, and serve an initial static file to the browser. It uses **Vue** to render pages on the client side (if JS is supported), and provide any additional dynamic functionality that may be needed.\n","combination":"Take the best parts of a static site workflow and combine them with the new hotness of a client side framework. What you end up with is a great new way to publish content on the modern web. Isomorphic blah blah blah: Use Jekyll to publish the site's pages, and the JSON data behind them—use Vue to build the same pages with the same data. Serve the first static page to the user—if JS is supported, just send the JSON down the wire and build the rest of the pages/content with Vue. If there's no JS support, continue to send pre-rendered static pages down the wire.\n","staticBenefits":["speed (cdn/pre-rendered)","cacheability","reliability","developer workflow"],"dynamicBenefits":["speed (ui/ux)","isomorphic rendering","complex state management","dynamic components"]}
-
-/***/ }),
-/* 5 */
 /***/ (function(module, exports) {
 
 // this module is a runtime utility for cleaner component module output and will
@@ -1776,6 +1742,40 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(4)(
+  /* script */
+  __webpack_require__(11),
+  /* template */
+  __webpack_require__(20),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/joshimbriani/Programming/ghostlyswoosh/components/app.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] app.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-f3f39ae0", Component.options)
+  } else {
+    hotAPI.reload("data-v-f3f39ae0", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1786,13 +1786,17 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _app = __webpack_require__(3);
+var _app = __webpack_require__(5);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _two = __webpack_require__(15);
+var _two = __webpack_require__(17);
 
 var _two2 = _interopRequireDefault(_two);
+
+var _diagonAlley = __webpack_require__(16);
+
+var _diagonAlley2 = _interopRequireDefault(_diagonAlley);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1802,6 +1806,9 @@ exports.default = [{
 }, {
     path: '/two',
     component: _two2.default
+}, {
+    path: '/areas/diagon-alley',
+    component: _diagonAlley2.default
 }];
 
 /***/ }),
@@ -4434,7 +4441,7 @@ if (inBrowser && window.Vue) {
 
 /* harmony default export */ __webpack_exports__["default"] = (VueRouter);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
 /* 8 */
@@ -15401,7 +15408,7 @@ Vue.compile = compileToFunctions;
 
 /* harmony default export */ __webpack_exports__["default"] = (Vue);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2), __webpack_require__(0), __webpack_require__(14).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3), __webpack_require__(1), __webpack_require__(15).setImmediate))
 
 /***/ }),
 /* 9 */
@@ -15446,11 +15453,11 @@ var _webfontloader = __webpack_require__(9);
 
 var _webfontloader2 = _interopRequireDefault(_webfontloader);
 
-var _marked = __webpack_require__(1);
+var _marked = __webpack_require__(0);
 
 var _marked2 = _interopRequireDefault(_marked);
 
-var _app = __webpack_require__(3);
+var _app = __webpack_require__(5);
 
 var _app2 = _interopRequireDefault(_app);
 
@@ -15490,11 +15497,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _data = __webpack_require__(4);
+var _data = __webpack_require__(2);
 
 var _data2 = _interopRequireDefault(_data);
 
-var _marked = __webpack_require__(1);
+var _marked = __webpack_require__(0);
 
 var _marked2 = _interopRequireDefault(_marked);
 
@@ -15574,11 +15581,71 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _data = __webpack_require__(4);
+var _data = __webpack_require__(2);
 
 var _data2 = _interopRequireDefault(_data);
 
-var _marked = __webpack_require__(1);
+var _marked = __webpack_require__(0);
+
+var _marked2 = _interopRequireDefault(_marked);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  data: function data() {
+    return {
+      siteData: _data2.default,
+      newItem: 'Data binding',
+      newDynamic: []
+    };
+  },
+
+  filters: {
+    capitalize: function capitalize(value) {
+      if (!value) return '';
+      value = value.toString();
+      return value.charAt(0).toUpperCase() + value.slice(1);
+    },
+    md: function md(val) {
+      return (0, _marked2.default)(val);
+    }
+  },
+  computed: {
+    rawdescription: function rawdescription() {
+      return (0, _marked2.default)(_data2.default.description);
+    }
+  },
+  methods: {
+    addItem: function addItem() {
+      this.newDynamic.push(this.newItem);
+      this.newItem = '';
+    }
+  }
+};
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _data = __webpack_require__(2);
+
+var _data2 = _interopRequireDefault(_data);
+
+var _marked = __webpack_require__(0);
 
 var _marked2 = _interopRequireDefault(_marked);
 
@@ -15627,7 +15694,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -15817,10 +15884,10 @@ exports.default = {
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(3)))
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -15876,7 +15943,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(13);
+__webpack_require__(14);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -15887,17 +15954,51 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (typeof global !== "undefined" && global.clearImmediate) ||
                          (this && this.clearImmediate);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Component = __webpack_require__(5)(
+var Component = __webpack_require__(4)(
   /* script */
   __webpack_require__(12),
   /* template */
-  __webpack_require__(16),
+  __webpack_require__(18),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/joshimbriani/Programming/ghostlyswoosh/components/areas/diagon-alley.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] diagon-alley.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4ba6de48", Component.options)
+  } else {
+    hotAPI.reload("data-v-4ba6de48", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(4)(
+  /* script */
+  __webpack_require__(13),
+  /* template */
+  __webpack_require__(19),
   /* scopeId */
   null,
   /* cssModules */
@@ -15924,7 +16025,26 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 16 */
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "copy"
+  }, [_c('h1', [_vm._v("Diagon Alley")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-4ba6de48", module.exports)
+  }
+}
+
+/***/ }),
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -15945,7 +16065,7 @@ if (false) {
 }
 
 /***/ }),
-/* 17 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -15999,7 +16119,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "environment"
   }, [_vm._v("*Disable Javascript to see the page rendered with Jekyll.")]), _vm._v(" "), _c('router-link', {
     attrs: {
-      "to": "/two"
+      "to": "/areas/test"
     }
   }, [_vm._v("Go to two")])], 1)
 },staticRenderFns: []}

@@ -1,8 +1,8 @@
 ---
-name: Diagon Alley
+name: World Expo
 type: area
 layout: index
-cover: da.jpg
-icon: da.jpg
+cover: we.jpg
+icon: we.jpg
 ---
 <h1>Test</h1>   

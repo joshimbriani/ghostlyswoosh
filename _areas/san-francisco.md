@@ -1,8 +1,8 @@
 ---
-name: Diagon Alley
+name: San Francisco
 type: area
 layout: index
-cover: da.jpg
-icon: da.jpg
+cover: sf.jpg
+icon: sf.jpg
 ---
 <h1>Test</h1>   

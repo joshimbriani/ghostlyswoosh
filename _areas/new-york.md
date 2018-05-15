@@ -1,8 +1,8 @@
 ---
-name: Diagon Alley
+name: New York
 type: area
 layout: index
-cover: da.jpg
-icon: da.jpg
+cover: ny.jpg
+icon: ny.jpg
 ---
 <h1>Test</h1>   

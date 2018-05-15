@@ -12,6 +12,26 @@ collections:
     title: Posts
     output: true
     permalink: "/news/:title"
+  areas:
+    title: Areas
+    output: true
+    permalink: "/areas/:name"
+  food:
+    title: Food and Drink
+    output: true
+    permalink: "/food/:name"
+  rides:
+    title: Rides and Attractions
+    output: true
+    permalink: "/rides/:name"
+  shopping:
+    title: Shopping
+    output: true
+    permalink: "/shopping/:name"
+  shows:
+    title: Shows
+    output: true
+    permalink: "/shows/:name"
 
 # Settings
 markdown: kramdown
