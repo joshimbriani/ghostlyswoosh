@@ -1,0 +1,37 @@
+
+# Info
+title: Vue❤Jekyll
+twitter: "http://twitter.com/bryanschuetz"
+github: "http://github.com/bryanschuetz"
+baseurl: ""
+url: "http://bryanschuetz.github.io"
+
+# Collections
+collections:
+  posts:
+    title: Posts
+    output: true
+    permalink: "/news/:title"
+
+# Settings
+markdown: kramdown
+gems:
+excerpt_seperator: "<!--more-->"
+destination: "./build"
+permalink: "/:titsle"
+exclude:
+  - components
+  - Gemfile
+  - Gemfile.lock
+  - ".gitignore"
+  - node_modules
+  - js/source.js
+  - webpack.config.js
+  - package.json
+  - .jshintrc
+  - .sass-cache
+  - browser-sync.js
+  - npm-debug.log
+  - README.MD
+sass:
+  style: compressed

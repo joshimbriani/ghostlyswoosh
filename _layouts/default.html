@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+  {% include gridly.html %}
+  <header>
+    <div class="header-inner">
+      <h1>{{ site.title }}</h1>
+    </div>
+  </header>
+  <div class="main">
+    {{ content }}
+  </div>
+  <footer>
+    <div class="footer-inner">
+      <p>Made, with ❤ in D.C.</p>
+    </div>
+  </footer>
+  <script src="{{ site.baseurl }}/js/bundle.js"></script>
+  </body>
+</html>

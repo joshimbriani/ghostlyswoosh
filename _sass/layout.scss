@@ -1,0 +1,85 @@
+// 🎌 INNER ADAPTIVE GRID 🎌
+.footer-inner, .main-inner, .header-inner, .gridly-wrap{
+  @include width(4);
+  margin: auto;
+  @include responsive(tiny-screens){
+    @include width(5);
+  }
+  @include responsive(small-screens){
+    @include width(6);
+  }
+  @include responsive(medium-screens){
+    @include width(8);
+  }
+  @include responsive(wide-screens){
+    @include width(10);
+  }
+  @include responsive(ultra-wide-screens){
+    @include width(12);
+  }
+  @include responsive(extra-ultra-wide-screens){
+    @include width(14);   
+  }
+  @include responsive(extra-extra-ultra-wide-screens){
+    @include width(16);   
+  }
+}
+
+// 🎌 FULL VIEWPORT 🎌
+
+header{
+  padding: 1rem;
+  h1{
+    text-align: center;
+    color: $vueblue;
+  }
+  background-color: $vuegreen;
+}
+.benefits{
+  @include width(4);
+    margin: auto;
+  @include responsive(medium-screens){
+    float: left;
+    margin-right: $gutter;
+  }
+  @include responsive(wide-screens){
+    @include width(5);
+  }
+  @include responsive(ultra-wide-screens){
+    @include width(6);
+  }
+  @include responsive(extra-ultra-wide-screens){
+    @include width(7);   
+  }
+  @include responsive(extra-extra-ultra-wide-screens){
+    @include width(8);   
+  }
+}
+.copy .benefits:last-of-type{
+  @include responsive(medium-screens){
+    margin-right: 0;
+   }
+}
+.main, .bennies{
+  @include clearfix;
+}
+input, button{
+  font-size: 1rem;
+  font-family: 'Alegreya', 'Georgia', serif;
+}
+input{
+  padding-left: .1rem;
+}
+button{
+  padding: .1rem;
+}
+footer{
+  margin-top: 15rem;
+  .footer-inner p{
+    text-align: center;
+  }
+}
+.environment{
+  text-align: center;
+  margin-top: 5rem;
+}
