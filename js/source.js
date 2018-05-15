@@ -16,7 +16,8 @@ WebFont.load({
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  routes: ourRoutes
+  routes: ourRoutes,
+  mode: 'history',
 })
 
 var app = new Vue({

@@ -24,6 +24,7 @@
       </div>
     </div>
       <p class="environment">*Disable Javascript to see the page rendered with Jekyll.</p>
+      <router-link to="/two">Go to two</router-link>
   </div>
 </template>
 
