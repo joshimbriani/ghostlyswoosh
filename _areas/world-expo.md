@@ -1,8 +1,7 @@
 ---
 name: World Expo
 type: area
-layout: index
+layout: area
 cover: we.jpg
 icon: we.jpg
 ---
-<h1>Test</h1>   

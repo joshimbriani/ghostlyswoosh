@@ -1,8 +1,7 @@
 ---
 name: New York
 type: area
-layout: index
+layout: area
 cover: ny.jpg
 icon: ny.jpg
 ---
-<h1>Test</h1>   

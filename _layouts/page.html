@@ -2,5 +2,9 @@
 layout: default
 ---
 <div class="main-inner page">
-  {{ content }}
+    <div id="content">
+        <router-view>
+            {{ content }}
+        </router-view>
+      </div>
 </div>

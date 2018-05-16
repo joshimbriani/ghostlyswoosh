@@ -1,8 +1,7 @@
 ---
 name: Hollywood
 type: area
-layout: index
+layout: area
 cover: hw.jpg
 icon: hw.jpg
 ---
-<h1>Test</h1>   

@@ -1,8 +1,7 @@
 ---
 name: Diagon Alley
 type: area
-layout: index
+layout: area
 cover: da.jpg
 icon: da.jpg
 ---
-<h1>Test</h1>   
