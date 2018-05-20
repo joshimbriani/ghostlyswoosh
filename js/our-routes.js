@@ -27,8 +27,37 @@ import transformers from '../components/rides/transformers-the-ride.vue'
 import woodyWoodpecker from '../components/rides/woody-woodpecker-nuthouse-coaster.vue'
 
 import diningIndex from '../components/dining/index.vue'
+import beverlyHills from '../components/dining/beverly-hills-boulangerie.vue'
+import boneChillin from '../components/dining/bone-chillin.vue'
+import cafelaBamba from '../components/dining/cafe-la-bamba.vue'
+import chezAlcatraz from '../components/dining/chez-alcatraz.vue'
+import duffBrewery from '../components/dining/duff-brewery.vue'
+import ffb from '../components/dining/fast-food-boulevard.vue'
+import finnegans from '../components/dining/finnegans.vue'
+import florean from '../components/dining/florean-fortescues-ice-cream-parlor.vue'
+import fountain from '../components/dining/fountain-of-fair-fortune.vue'
+import guidos from '../components/dining/guidos-gelato.vue'
+import kzpc from '../components/dining/kid-zone-pizza-company.vue'
+import leakyCauldron from '../components/dining/leaky-cauldron.vue'
+import lombards from '../components/dining/lombards.vue'
+import louies from '../components/dining/louies.vue'
+import mels from '../components/dining/mels-drive-in.vue'
+import moes from '../components/dining/moes-tavern.vue'
+import monstersCafe from '../components/dining/monsters-cafe.vue'
+import richters from '../components/dining/richters.vue'
+import sfcf from '../components/dining/san-francisco-candy-factory.vue'
+import sfpc from '../components/dining/san-francisco-pastry-company.vue'
+import schwabs from '../components/dining/schwabs-pharmacy.vue'
+import starbucks from '../components/dining/starbucks.vue'
+import studioSweets from '../components/dining/studio-sweets.vue'
+import hoppingPot from '../components/dining/the-hopping-pot.vue'
 
 import eventsIndex from '../components/events/index.vue'
+import acohp from '../components/events/a-celebration-of-harry-potter.vue'
+import hhn from '../components/events/halloween-horror-nights.vue'
+import haus from '../components/events/holidays-at-universal-orlando.vue'
+import mg from '../components/events/mardi-gras.vue'
+import rtu from '../components/events/rock-the-universe.vue'
 
 import shoppingIndex from '../components/shopping/index.vue'
 
@@ -144,8 +173,100 @@ export default [
         component: diningIndex,
         children: [
             {
-                path: 'diagon-alley',
-                component: diagonAlley
+                path: 'beverly-hills-boulangerie',
+                component: beverlyHills
+            },
+            {
+                path: 'bone-chillin',
+                component: boneChillin
+            },
+            {
+                path: 'cafe-la-bamba',
+                component: cafelaBamba
+            },
+            {
+                path: 'chez-alcatraz',
+                component: chezAlcatraz
+            },
+            {
+                path: 'duff-brewery',
+                component: duffBrewery
+            },
+            {
+                path: 'fast-food-boulevard',
+                component: ffb
+            },
+            {
+                path: 'finnegans',
+                component: finnegans
+            },
+            {
+                path: 'florean-fortescues-ice-cream-parlor',
+                component: florean
+            },
+            {
+                path: 'fountain-of-fair-fortune',
+                component: fountain
+            },
+            {
+                path: 'guidos-gelato',
+                component: guidos
+            },
+            {
+                path: 'kid-zone-pizza-company',
+                component: kzpc
+            },
+            {
+                path: 'leaky-cauldron',
+                component: leakyCauldron
+            },
+            {
+                path: 'lombards',
+                component: lombards
+            },
+            {
+                path: 'louies',
+                component: louies
+            },
+            {
+                path: 'mels-drive-in',
+                component: mels
+            },
+            {
+                path: 'moes-tavern',
+                component: moes
+            },
+            {
+                path: 'monsters-cafe',
+                component: monstersCafe
+            },
+            {
+                path: 'richters',
+                component: richters
+            },
+            {
+                path: 'san-francisco-candy-factory',
+                component: sfcf
+            },
+            {
+                path: 'san-francisco-pastry-company',
+                component: sfpc
+            },
+            {
+                path: 'schwabs-pharmacy',
+                component: schwabs
+            },
+            {
+                path: 'starbucks',
+                component: starbucks
+            },
+            {
+                path: 'studio-sweets',
+                component: studioSweets
+            },
+            {
+                path: 'the-hopping-pot',
+                component: hoppingPot
             },
         ]
     },
@@ -154,8 +275,24 @@ export default [
         component: eventsIndex,
         children: [
             {
-                path: 'diagon-alley',
-                component: diagonAlley
+                path: 'a-celebration-of-harry-potter',
+                component: acohp
+            },
+            {
+                path: 'halloween-horror-nights',
+                component: hhn
+            },
+            {
+                path: 'holidays-at-universal-studios',
+                component: haus
+            },
+            {
+                path: 'mardi-gras',
+                component: mg
+            },
+            {
+                path: 'rock-the-universe',
+                component: rtu
             },
         ]
     },
