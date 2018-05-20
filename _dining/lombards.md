@@ -1,5 +1,5 @@
 ---
-name: Lombards
+name: Lombard's Seafood Grill
 type: food
 layout: page
 cover: lombards.jpg

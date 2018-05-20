@@ -16,10 +16,10 @@ collections:
     title: Areas
     output: true
     permalink: "/areas/:name"
-  food:
-    title: Food and Drink
+  dining:
+    title: Dining
     output: true
-    permalink: "/food/:name"
+    permalink: "/dining/:name"
   rides:
     title: Rides and Attractions
     output: true
@@ -32,6 +32,10 @@ collections:
     title: Shows
     output: true
     permalink: "/shows/:name"
+  events:
+    title: events
+    output: true
+    permalink: "/events/:name"
 
 # Settings
 markdown: kramdown
