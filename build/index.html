@@ -1,69 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
 
-  <title>Ghostly Swoosh</title>
+  <title>Vue❤Jekyll</title>
 
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
-  <body>
-  <div class="gridly-wrap">
-  <div class="gridly">
-    <div class="column one"></div>
-    <div class="column two"></div>
-    <div class="column three"></div>
-    <div class="column four"></div>
-    <div class="column five"></div>
-    <div class="column six"></div>
-    <div class="column seven"></div>
-    <div class="column eight"></div>
-    <div class="column nine"></div>
-    <div class="column ten"></div>
-    <div class="column eleven"></div>
-    <div class="column twelve"></div>
-    <div class="column thirteen"></div>
-    <div class="column fourteen"></div>
-    <div class="column fifteen"></div>
-    <div class="column sixteen"></div>
-  </div>
-</div>
-  <header>
-    <div class="header-inner">
-      <h1><a href="/">Ghostly Swoosh</a></h1>
-      <ul>
-        <li>
-          <router-link to="/areas">Areas</router-link>
-        </li>
-        <li>
-          <router-link to="/rides">Rides</router-link>
-        </li>
-        <li>
-          <router-link to="/shows">Shows</router-link>
-        </li>
-        <li>
-          <router-link to="/dining">Dining</router-link>
-        </li>
-        <li>
-          <router-link to="/shopping">Shopping</router-link>
-        </li>
-        <li>
-          <router-link to="/forum">Forum</router-link>
-        </li>
-        <li>
-          <router-link to="/about">About</router-link>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <div class="main">
-    <div class="main-inner index">
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="header-inner">
+        <nav class="navbar navbar-expand-lg">
+          <router-link class="navbar-brand" to="/">Vue❤Jekyll</router-link>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <router-link class="nav-link" to="/areas">Areas</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/rides">Rides</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/shows">Shows</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/dining">Dining</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/shopping">Shopping</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/forum">Forum</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link" to="/about">About</router-link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="main">
+      <div class="main-inner index">
   <div id="content">
     <router-view>
         <div class="copy">
@@ -111,15 +101,17 @@
     </router-view>
   </div>
 </div>
-  </div>
-  <footer>
-    <div class="footer-inner">
-      <p>Made, with ❤ in D.C.</p>
     </div>
-  </footer>
+    <footer>
+      <div class="footer-inner">
+        <p>Made, with ❤ in D.C.</p>
+      </div>
+    </footer>
+  </div>
   <script src="/js/bundle.js"></script>
   <script src="/js/jquery-3.3.1.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
+
 </html>
