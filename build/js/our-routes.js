@@ -1,5 +1,5 @@
 import app from '../components/app.vue'
-import two from '../components/two.vue'
+import about from '../components/about.vue'
 
 import areaIndex from '../components/areas/index.vue'
 import diagonAlley from '../components/areas/diagon-alley.vue'
@@ -60,8 +60,54 @@ import mg from '../components/events/mardi-gras.vue'
 import rtu from '../components/events/rock-the-universe.vue'
 
 import shoppingIndex from '../components/shopping/index.vue'
+import amazingPictures from '../components/shopping/amazing-pictures.vue'
+import bettyBoop from '../components/shopping/betty-boop-store.vue'
+import borginAndBurkes from '../components/shopping/borgin-and-burkes.vue'
+import brownDerby from '../components/shopping/brown-derby-hat-shop.vue'
+import customGear from '../components/shopping/custom-gear.vue'
+import cyberImage from '../components/shopping/cyber-image.vue'
+import etsToyCloset from '../components/shopping/ets-toy-closet.vue'
+import helloKitty from '../components/shopping/hello-kitty-shop.vue'
+import irishShop from '../components/shopping/irish-shop.vue'
+import itsaWrap from '../components/shopping/its-a-wrap.vue'
+import kwikEMart from '../components/shopping/kwik-e-mart.vue'
+import madamMalkins from '../components/shopping/madam-malkins.vue'
+import magicalMenagerie from '../components/shopping/magical-menagerie.vue'
+import mibGear from '../components/shopping/mib-gear.vue'
+import ollivanders from '../components/shopping/ollivanders.vue'
+import onLocation from '../components/shopping/on-location.vue'
+import parkPlaza from '../components/shopping/park-plaza-holiday-shop.vue'
+import qqs from '../components/shopping/quality-quidditch-supplies.vue'
+import saharaOutfitters from '../components/shopping/sahara-outfitters.vue'
+import scribbulus from '../components/shopping/scribbulus.vue'
+import shreks from '../components/shopping/shreks-ye-old-souvenir-shop.vue'
+import shutterbuttons from '../components/shopping/shutterbuttons-photography-studio.vue'
+import spongebobStorepants from '../components/shopping/spongebob-storepants.vue'
+import sss from '../components/shopping/super-silly-stuff.vue'
+import supplyVault from '../components/shopping/supply-vault.vue'
+import tBS from '../components/shopping/the-barney-store.vue'
+import tFV from '../components/shopping/the-film-vault.vue'
+import tTS from '../components/shopping/the-tonight-store.vue'
+import uSS from '../components/shopping/universal-studios-store.vue'
+import greg from '../components/shopping/wands-by-gregorovitch.vue'
+import www from '../components/shopping/weasleys-wizard-wheezes.vue'
+import williams from '../components/shopping/williams-of-hollywood.vue'
+import wiseacres from '../components/shopping/wiseacres-wizarding-equipment.vue'
 
 import showsIndex from '../components/shows/index.vue'
+import aditpwb from '../components/shows/a-day-in-the-park-with-barney.vue'
+import aaol from '../components/shows/animal-actors-on-location.vue'
+import beatBuilders from '../components/shows/beat-builders.vue'
+import celestinaWarbeck from '../components/shows/celestina-warbeck.vue'
+import ffl from '../components/shows/fear-factor-live.vue'
+import hms from '../components/shows/horror-makeup-show.vue'
+import marilyn from '../components/shows/marilyn-and-the-diamond-bellas.vue'
+import shrek from '../components/shows/meet-shrek-and-donkey.vue'
+import meetTransformers from '../components/shows/meet-the-transformers.vue'
+import singIt from '../components/shows/sing-it.vue'
+import superstarParade from '../components/shows/superstar-parade.vue'
+import bluesBrothers from '../components/shows/the-blues-brothers.vue'
+import beedle from '../components/shows/the-tales-of-beedle-the-bard.vue'
 
 export default [
     {
@@ -69,8 +115,8 @@ export default [
         component: app
     },
     {
-        path: '/two',
-        component: two
+        path: '/about',
+        component: about
     },
     {
         path: '/areas',
@@ -301,8 +347,136 @@ export default [
         component: shoppingIndex,
         children: [
             {
-                path: 'diagon-alley',
-                component: diagonAlley
+                path: 'amazing-pictures',
+                component: amazingPictures
+            },
+            {
+                path: 'betty-boop-store',
+                component: bettyBoop
+            },
+            {
+                path: 'borgin-and-burkes',
+                component: borginAndBurkes
+            },
+            {
+                path: 'brown-derby-hat-shop',
+                component: brownDerby
+            },
+            {
+                path: 'custom-gear',
+                component: customGear
+            },
+            {
+                path: 'cyber-image',
+                component: cyberImage
+            },
+            {
+                path: 'ets-toy-closet',
+                component: etsToyCloset
+            },
+            {
+                path: 'hello-kitty-shop',
+                component: helloKitty
+            },
+            {
+                path: 'irish-shop',
+                component: irishShop
+            },
+            {
+                path: 'its-a-wrap',
+                component: itsaWrap
+            },
+            {
+                path: 'kwik-e-mart',
+                component: kwikEMart
+            },
+            {
+                path: 'madam-malkins',
+                component: madamMalkins
+            },
+            {
+                path: 'magical-menagerie',
+                component: magicalMenagerie
+            },
+            {
+                path: 'mib-gear',
+                component: mibGear
+            },
+            {
+                path: 'ollivanders',
+                component: ollivanders
+            },
+            {
+                path: 'on-location',
+                component: onLocation
+            },
+            {
+                path: 'park-plaza-holiday-shop',
+                component: parkPlaza
+            },
+            {
+                path: 'quality-quidditch-supplies',
+                component: qqs
+            },
+            {
+                path: 'sahara-outfitters',
+                component: saharaOutfitters
+            },
+            {
+                path: 'scribbulus',
+                component: scribbulus
+            },
+            {
+                path: 'shreks-ye-old-souvenir-shop',
+                component: shreks
+            },
+            {
+                path: 'shutterbuttons-photography-studio',
+                component: shutterbuttons
+            },
+            {
+                path: 'spongebob-storepants',
+                component: spongebobStorepants
+            },
+            {
+                path: 'super-silly-stuff',
+                component: sss
+            },
+            {
+                path: 'supply-vault',
+                component: supplyVault
+            },
+            {
+                path: 'the-barney-store',
+                component: tBS
+            },
+            {
+                path: 'the-film-vault',
+                component: tFV
+            },
+            {
+                path: 'the-tonight-store',
+                component: tTS
+            },
+            {
+                path: 'universal-studios-store',
+                component: uSS
+            },
+            {
+                path: 'wands-by-gregorovitch',
+                component: greg
+            },
+            {
+                path: 'weasleys-wizard-wheezes',
+                component: www
+            },
+            {
+                path: 'williams-of-hollywood',
+                component: williams
+            },
+            {
+                path: 'wiseacres-wizarding-equipment',
+                component: wiseacres
             },
         ]
     },
@@ -311,8 +485,56 @@ export default [
         component: showsIndex,
         children: [
             {
-                path: 'diagon-alley',
-                component: diagonAlley
+                path: 'a-day-in-the-park-with-barney',
+                component: aditpwb
+            },
+            {
+                path: 'animal-actors-on-location',
+                component: aaol
+            },
+            {
+                path: 'beat-builders',
+                component: beatBuilders
+            },
+            {
+                path: 'celestina-warbeck',
+                component: celestinaWarbeck
+            },
+            {
+                path: 'fear-factor-live',
+                component: ffl
+            },
+            {
+                path: 'horror-makeup-show',
+                component: hms
+            },
+            {
+                path: 'marilyn-and-the-diamond-bellas',
+                component: marilyn
+            },
+            {
+                path: 'meets-shrek-and-donkey',
+                component: shrek
+            },
+            {
+                path: 'meet-the-transformers',
+                component: meetTransformers
+            },
+            {
+                path: 'sing-it',
+                component: singIt
+            },
+            {
+                path: 'superstar-parade',
+                component: superstarParade
+            },
+            {
+                path: 'blues-brothers',
+                component: bluesBrothers
+            },
+            {
+                path: 'the-tales-of-beedle-the-bard',
+                component: beedle
             },
         ]
     }
