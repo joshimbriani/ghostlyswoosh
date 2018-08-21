@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,53 +13,38 @@
   <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
-  <body>
-  <div class="gridly-wrap">
-  <div class="gridly">
-    <div class="column one"></div>
-    <div class="column two"></div>
-    <div class="column three"></div>
-    <div class="column four"></div>
-    <div class="column five"></div>
-    <div class="column six"></div>
-    <div class="column seven"></div>
-    <div class="column eight"></div>
-    <div class="column nine"></div>
-    <div class="column ten"></div>
-    <div class="column eleven"></div>
-    <div class="column twelve"></div>
-    <div class="column thirteen"></div>
-    <div class="column fourteen"></div>
-    <div class="column fifteen"></div>
-    <div class="column sixteen"></div>
-  </div>
-</div>
+
+<body>
   <header>
-    <div class="header-inner">
-      <h1><a href="/">Ghostly Swoosh</a></h1>
-      <ul>
-        <li>
-          <router-link to="/areas">Areas</router-link>
-        </li>
-        <li>
-          <router-link to="/rides">Rides</router-link>
-        </li>
-        <li>
-          <router-link to="/shows">Shows</router-link>
-        </li>
-        <li>
-          <router-link to="/dining">Dining</router-link>
-        </li>
-        <li>
-          <router-link to="/shopping">Shopping</router-link>
-        </li>
-        <li>
-          <router-link to="/forum">Forum</router-link>
-        </li>
-        <li>
-          <router-link to="/about">About</router-link>
-        </li>
-      </ul>
+    <div class="header-inner d-flex justify-content-between">
+      <a href="/" class="site-title"><h1 class="ghostly">Ghostly</h1>
+        <h1 class="swoosh">Swoosh</h1></a>
+      <nav>
+        <a href="#" class="menu-icon"><ion-icon name="menu"></ion-icon></a>
+        <ul>
+          <li>
+            <a href="/areas/">Areas</a>
+          </li>
+          <li>
+            <a href="/rides/">Rides</a>
+          </li>
+          <li>
+            <a href="/shows/">Shows</a>
+          </li>
+          <li>
+            <a href="/dining/">Dining</a>
+          </li>
+          <li>
+            <a href="/shopping/">Shopping</a>
+          </li>
+          <li>
+            <a href="/forum/">Forum</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <div class="main">
@@ -78,5 +63,7 @@
   <script src="/js/jquery-3.3.1.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+</body>
+
 </html>

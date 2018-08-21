@@ -42,7 +42,7 @@ markdown: kramdown
 gems:
 excerpt_seperator: "<!--more-->"
 destination: "./build"
-permalink: "/:titsle"
+permalink: "/:title"
 exclude:
   - components
   - Gemfile
