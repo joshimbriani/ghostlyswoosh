@@ -15,48 +15,41 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <header>
-      <div class="header-inner">
-        <nav class="navbar navbar-expand-lg">
-          <router-link class="navbar-brand" to="/">Vue❤Jekyll</router-link>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <router-link class="nav-link" to="/areas">Areas</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/rides">Rides</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/shows">Shows</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/dining">Dining</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/shopping">Shopping</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/forum">Forum</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/about">About</router-link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="main">
-      <div class="main-inner index">
-  <div id="content">
-    <router-view>
-        <div class="copy">
+  <header>
+    <div class="header-inner d-flex justify-content-between">
+      <a href="/" class="site-title"><h1 class="ghostly">Ghostly</h1>
+        <h1 class="swoosh">Swoosh</h1></a>
+      <nav>
+        <a href="#" class="menu-icon"><ion-icon name="menu"></ion-icon></a>
+        <ul>
+          <li>
+            <a href="/areas/">Areas</a>
+          </li>
+          <li>
+            <a href="/rides/">Rides</a>
+          </li>
+          <li>
+            <a href="/shows/">Shows</a>
+          </li>
+          <li>
+            <a href="/dining/">Dining</a>
+          </li>
+          <li>
+            <a href="/shopping/">Shopping</a>
+          </li>
+          <li>
+            <a href="/forum/">Forum</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="main">
+    <div id="content">
+  <div class="copy">
   <h2>Static, Meet Dynamic.</h2>
   <p><p><a href="https://github.com/BryanSchuetz/vue-jekyll">This Repo</a> is a bare-bones template for building static sites that leverage a client-side JS framework for dynamic functionality. It uses <a href="https://www.npmjs.com/">NPM</a>, <a href="https://webpack.js.org">Webpack</a>, <a href="https://vuejs.org">Vue</a>, and <a href="https://jekyllrb.com">Jekyll</a>. It uses <strong>NPM (and Bundler)</strong> to manage the project’s dependencies, and improve the development workflow. It uses <strong>Webpack</strong> to roll up and transpile all the individual modules and components into a single bundeled JS file. It uses <strong>Jekyll</strong> to bring it all together, build the site, and serve an initial static file to the browser. It uses <strong>Vue</strong> to render pages on the client side (if JS is supported), and provide any additional dynamic functionality that may be needed.</p>
 </p>
@@ -98,8 +91,6 @@
   <p class="environment">*Enable Javascript to see the page rendered with Vue.</p>
 </div>
 
-    </router-view>
-  </div>
 </div>
     </div>
     <footer>
@@ -112,6 +103,7 @@
   <script src="/js/jquery-3.3.1.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
 </body>
 
 </html>

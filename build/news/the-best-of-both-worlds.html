@@ -15,45 +15,40 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <header>
-      <div class="header-inner">
-        <nav class="navbar navbar-expand-lg">
-          <router-link class="navbar-brand" to="/">Vue❤Jekyll</router-link>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <router-link class="nav-link" to="/areas">Areas</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/rides">Rides</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/shows">Shows</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/dining">Dining</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/shopping">Shopping</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/forum">Forum</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="/about">About</router-link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="main">
-      <div class="main-inner post">
+  <header>
+    <div class="header-inner d-flex justify-content-between">
+      <a href="/" class="site-title"><h1 class="ghostly">Ghostly</h1>
+        <h1 class="swoosh">Swoosh</h1></a>
+      <nav>
+        <a href="#" class="menu-icon"><ion-icon name="menu"></ion-icon></a>
+        <ul>
+          <li>
+            <a href="/areas/">Areas</a>
+          </li>
+          <li>
+            <a href="/rides/">Rides</a>
+          </li>
+          <li>
+            <a href="/shows/">Shows</a>
+          </li>
+          <li>
+            <a href="/dining/">Dining</a>
+          </li>
+          <li>
+            <a href="/shopping/">Shopping</a>
+          </li>
+          <li>
+            <a href="/forum/">Forum</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="main">
+    <div class="main-inner post">
   <p>The new static. All the performance, none of the simplicity. Just so.</p>
 
 </div>
@@ -69,6 +64,7 @@
   <script src="/js/jquery-3.3.1.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
 </body>
 
 </html>
