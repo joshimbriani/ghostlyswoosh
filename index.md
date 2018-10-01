@@ -4,8 +4,8 @@ layout: homepage
 
 <div class="container">
             <!--Grid row-->
-            <div class="row">
-            
+            <div class="row" id="wait_time_container">
+
             </div>
             <div class="row py-5">
               <!--Grid column-->
