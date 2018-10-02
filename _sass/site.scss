@@ -7,21 +7,6 @@
     
 }
 
-.ghostly {
-    font-size: 2rem;
-}
-
-.swoosh {
-    margin-left: 20px;
-    margin-top: -25px;
-    font-size: 2rem;
-}
-
-nav {
-	
-	padding: 10px;	
-}
-
 .menu-icon {
 	display: none;
 	width: 40px;
@@ -46,10 +31,6 @@ nav li {
 
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
-
-	header {
-		position: absolute;
-	}
 
 	.menu-icon {
 

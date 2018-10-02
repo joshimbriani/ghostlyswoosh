@@ -8,6 +8,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var MySlider = window.Slider.default;
+
+console.log(window.Slider.default);
+
 var WaitTime = function (_React$Component) {
     _inherits(WaitTime, _React$Component);
 
@@ -18,31 +22,48 @@ var WaitTime = function (_React$Component) {
     }
 
     _createClass(WaitTime, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             if (this.props.ride) {
                 return React.createElement(
-                    'div',
+                    "div",
                     null,
                     React.createElement(
-                        'h1',
-                        null,
-                        this.props.ride.name
-                    ),
-                    React.createElement(
-                        'p',
-                        null,
-                        this.props.ride.waitTime
+                        "div",
+                        { className: "card" },
+                        React.createElement(
+                            "div",
+                            { className: "card-body" },
+                            React.createElement(
+                                "h4",
+                                { className: "card-title" },
+                                this.props.ride.name
+                            ),
+                            React.createElement(
+                                "p",
+                                { className: "card-text" },
+                                this.props.ride.isOpen ? this.props.ride.waitTime : "Closed"
+                            ),
+                            React.createElement(
+                                "p",
+                                { className: "card-text" },
+                                React.createElement(
+                                    "small",
+                                    { className: "text-muted" },
+                                    "Last updated 3 mins ago"
+                                )
+                            )
+                        )
                     )
                 );
             } else {
                 return React.createElement(
-                    'div',
+                    "div",
                     null,
                     React.createElement(
-                        'p',
+                        "p",
                         null,
-                        'No ride found! You shouldn\'t ever see this message.'
+                        "No ride found! You shouldn't ever see this message."
                     )
                 );
             }
@@ -61,16 +82,18 @@ var WaitTimeContainer = function (_React$Component2) {
         var _this2 = _possibleConstructorReturn(this, (WaitTimeContainer.__proto__ || Object.getPrototypeOf(WaitTimeContainer)).call(this, props));
 
         _this2.state = {
-            waitTimeData: []
+            waitTimeData: [],
+            loading: false
         };
         return _this2;
     }
 
     _createClass(WaitTimeContainer, [{
-        key: 'componentDidMount',
+        key: "componentDidMount",
         value: function componentDidMount() {
             var _this3 = this;
 
+            this.setState({ loading: true });
             fetch("https://x52l516ijj.execute-api.us-east-1.amazonaws.com/default/getWaitTimes", {
                 method: 'POST',
                 headers: {
@@ -81,19 +104,51 @@ var WaitTimeContainer = function (_React$Component2) {
             }).then(function (response) {
                 return response.json();
             }).then(function (responseJSON) {
-                _this3.setState({ waitTimeData: responseJSON });
+                _this3.setState({ waitTimeData: responseJSON, loading: false });
             });
         }
     }, {
-        key: 'render',
+        key: "render",
         value: function render() {
-            return React.createElement(
-                'div',
-                null,
-                this.state.waitTimeData.map(function (ride) {
-                    return React.createElement(WaitTime, { ride: ride });
-                })
-            );
+            if (this.state.loading) {
+                return React.createElement(
+                    "div",
+                    null,
+                    React.createElement(
+                        "p",
+                        null,
+                        "Loading"
+                    )
+                );
+            } else {
+                var settings = {
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                };
+                console.log(Slider);
+                console.log(WaitTime);
+                return React.createElement(
+                    "div",
+                    { className: "d-flex", style: { width: '100%', alignItems: 'center', justifyContent: 'center' } },
+                    React.createElement(
+                        "div",
+                        { style: { width: '80%', marginRight: 'auto', marginLeft: 'auto' } },
+                        React.createElement(
+                            MySlider,
+                            settings,
+                            this.state.waitTimeData.filter(function (ride) {
+                                return ride.isQueueable;
+                            }).map(function (ride) {
+                                console.log(ride);
+                                return React.createElement(WaitTime, { ride: ride });
+                            })
+                        )
+                    )
+                );
+            }
         }
     }]);
 

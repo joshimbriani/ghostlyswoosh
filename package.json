@@ -19,6 +19,7 @@
   "homepage": "https://github.com/joshimbriani/ghostlyswoosh#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^3.1.2"
+    "babel-preset-react-app": "^3.1.2",
+    "react-bootstrap-carousel": "^3.2.1"
   }
 }
