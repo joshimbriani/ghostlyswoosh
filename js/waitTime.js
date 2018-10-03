@@ -10,8 +10,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var MySlider = window.Slider.default;
 
-console.log(window.Slider.default);
-
 var WaitTime = function (_React$Component) {
     _inherits(WaitTime, _React$Component);
 
@@ -27,33 +25,25 @@ var WaitTime = function (_React$Component) {
             if (this.props.ride) {
                 return React.createElement(
                     "div",
-                    null,
+                    { className: this.props.index % 3 !== 2 ? " border-right" : "", style: { textAlign: 'center', height: '100%', padding: 5 } },
+                    React.createElement(
+                        "h4",
+                        null,
+                        React.createElement(
+                            "strong",
+                            null,
+                            this.props.ride.name
+                        )
+                    ),
                     React.createElement(
                         "div",
-                        { className: "card" },
-                        React.createElement(
-                            "div",
-                            { className: "card-body" },
-                            React.createElement(
-                                "h4",
-                                { className: "card-title" },
-                                this.props.ride.name
-                            ),
-                            React.createElement(
-                                "p",
-                                { className: "card-text" },
-                                this.props.ride.isOpen ? this.props.ride.waitTime : "Closed"
-                            ),
-                            React.createElement(
-                                "p",
-                                { className: "card-text" },
-                                React.createElement(
-                                    "small",
-                                    { className: "text-muted" },
-                                    "Last updated 3 mins ago"
-                                )
-                            )
-                        )
+                        { style: { fontSize: 30 } },
+                        !this.props.ride.closed ? this.props.ride.waitTime : "Closed"
+                    ),
+                    !this.props.ride.closed && React.createElement(
+                        "div",
+                        null,
+                        "minutes"
                     )
                 );
             } else {
@@ -113,11 +103,16 @@ var WaitTimeContainer = function (_React$Component2) {
             if (this.state.loading) {
                 return React.createElement(
                     "div",
-                    null,
+                    { className: "col-md-12" },
                     React.createElement(
-                        "p",
-                        null,
-                        "Loading"
+                        "div",
+                        { style: { marginTop: 20 }, className: "d-flex flex-column justify-content-center" },
+                        React.createElement("img", { src: "/images/icons/loading.svg", alt: "Loading" }),
+                        React.createElement(
+                            "div",
+                            { className: "text-center" },
+                            "Loading..."
+                        )
                     )
                 );
             } else {
@@ -128,8 +123,6 @@ var WaitTimeContainer = function (_React$Component2) {
                     slidesToShow: 3,
                     slidesToScroll: 3
                 };
-                console.log(Slider);
-                console.log(WaitTime);
                 return React.createElement(
                     "div",
                     { className: "d-flex", style: { width: '100%', alignItems: 'center', justifyContent: 'center' } },
@@ -141,9 +134,9 @@ var WaitTimeContainer = function (_React$Component2) {
                             settings,
                             this.state.waitTimeData.filter(function (ride) {
                                 return ride.isQueueable;
-                            }).map(function (ride) {
+                            }).map(function (ride, index) {
                                 console.log(ride);
-                                return React.createElement(WaitTime, { ride: ride });
+                                return React.createElement(WaitTime, { ride: ride, index: index });
                             })
                         )
                     )

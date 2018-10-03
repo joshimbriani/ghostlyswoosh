@@ -2,20 +2,15 @@
 
 const MySlider = window.Slider.default;
 
-console.log(window.Slider.default)
-
 class WaitTime extends React.Component {
+
     render() {
         if (this.props.ride) {
             return (
-                <div>
-                    <div className="card">
-                        <div className="card-body">
-                            <h4 className="card-title">{this.props.ride.name}</h4>
-                            <p className="card-text">{this.props.ride.isOpen ? this.props.ride.waitTime : "Closed"}</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
+                <div className={(this.props.index % 3 !== 2 ? " border-right" : "")} style={{ textAlign: 'center', height: '100%', padding: 5 }}>
+                    <h4><strong>{this.props.ride.name}</strong></h4>
+                    <div style={{fontSize: 30}}>{!this.props.ride.closed ? this.props.ride.waitTime : "Closed"}</div>
+                    {!this.props.ride.closed && <div>minutes</div>}
                 </div>
             );
         } else {
@@ -56,8 +51,12 @@ class WaitTimeContainer extends React.Component {
     render() {
         if (this.state.loading) {
             return (
-                <div>
-                    <p>Loading</p>
+                <div className="col-md-12">
+                    <div style={{marginTop: 20}} className="d-flex flex-column justify-content-center">
+                        <img src="/images/icons/loading.svg" alt="Loading" />
+                        <div className="text-center">Loading...</div>
+                    </div>
+                    
                 </div>
             )
         } else {
@@ -68,16 +67,14 @@ class WaitTimeContainer extends React.Component {
                 slidesToShow: 3,
                 slidesToScroll: 3
             };
-            console.log(Slider)
-            console.log(WaitTime)
             return (
-                <div className="d-flex" style={{width: '100%', alignItems: 'center', justifyContent: 'center'}}>
+                <div className="d-flex" style={{ width: '100%', alignItems: 'center', justifyContent: 'center' }}>
                     <div style={{ width: '80%', marginRight: 'auto', marginLeft: 'auto' }}>
                         <MySlider {...settings}>
-                            {this.state.waitTimeData.filter((ride) => ride.isQueueable).map((ride) => {
+                            {this.state.waitTimeData.filter((ride) => ride.isQueueable).map((ride, index) => {
                                 console.log(ride)
                                 return (
-                                    <WaitTime ride={ride} />
+                                    <WaitTime ride={ride} index={index} />
                                 )
                             })}
                         </MySlider>
