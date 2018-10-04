@@ -3,25 +3,3 @@
 // 🎌 IMPORT ALL THE STUFF—I LET JEKYLL HANDLE THE SASS 🎌
 @import 'variables';
 @import 'site';
-
-.view {
-    height: 85vh;
-    background-image: url('/images/fnfmain.jpg'); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center center;
-}
-
-.navbar:not(.top-nav-collapse) {
-    background: transparent !important;
-}
-  
-.top-nav-collapse {
-    background-color: #424f95 !important;
-  } 
-
-@media (max-width: 991px) {
-    .navbar:not(.top-nav-collapse) {
-      background: #424f95 !important;
-    }
-  }
