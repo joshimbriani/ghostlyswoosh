@@ -2,11 +2,13 @@
 layout: homepage
 ---
 
-<div class="container">
+<div class="container-fluid">
             <!--Grid row-->
-            <div class="row-eq-height" id="wait_time_container" class="waitTime">
+            <div id="wait_time_container" class="waitTime">
 
             </div>
+</div>
+<div class="container">
             <div class="row py-5">
               <!--Grid column-->
               <div class="col-md-12 text-center">

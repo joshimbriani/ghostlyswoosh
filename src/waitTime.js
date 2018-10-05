@@ -1,15 +1,19 @@
 'use strict';
 
-const MySlider = window.Slider.default;
-
 class WaitTime extends React.Component {
 
     render() {
-        if (this.props.ride) {
+        if (this.props.ride && this.props.index !== undefined) {
+            var displayClass = "";
+            if (this.props.index > 0 && this.props.index < 4) {
+                displayClass = " d-none d-md-block"
+            } else if (this.props.index > 3) {
+                displayClass = " d-none d-lg-block"
+            }
             return (
-                <div className={(this.props.index % 3 !== 2 ? " border-right" : "")} style={{ textAlign: 'center', height: '100%', padding: 5 }}>
+                <div className={"col border-right" + displayClass} style={{ textAlign: 'center', paddingHorizontal: 5, paddingBottom: 5, paddingTop: 20 }}>
                     <h4><strong>{this.props.ride.name}</strong></h4>
-                    <div style={{fontSize: 30}}>{!this.props.ride.closed ? this.props.ride.waitTime : "Closed"}</div>
+                    <div style={{ fontSize: 30 }}>{!this.props.ride.closed ? this.props.ride.waitTime : "Closed"}</div>
                     {!this.props.ride.closed && <div>minutes</div>}
                 </div>
             );
@@ -31,6 +35,8 @@ class WaitTimeContainer extends React.Component {
             waitTimeData: [],
             loading: false
         };
+
+        this.getImportantRides = this.getImportantRides.bind(this);
     }
 
     componentDidMount() {
@@ -48,15 +54,24 @@ class WaitTimeContainer extends React.Component {
             })
     }
 
+    getImportantRides() {
+        const importantRides = ["Revenge of the Mummy!", "MEN IN BLACK Alien Attack", "Hollywood Rip Ride Rockit", "Harry Potter and the Escape from Gringotts", "Fast & Furious - Supercharged", "Despicable Me Minion Mayhem"]
+        if (this.state.waitTimeData.length <= 6) {
+            return this.state.waitTimeData;
+        } else {
+            return this.state.waitTimeData.filter((ride) => importantRides.indexOf(ride.name) > -1)
+        }
+    }
+
     render() {
         if (this.state.loading) {
             return (
                 <div className="col-md-12">
-                    <div style={{marginTop: 20}} className="d-flex flex-column justify-content-center">
+                    <div style={{ marginTop: 20 }} className="d-flex flex-column justify-content-center">
                         <img src="/images/icons/loading.svg" alt="Loading" />
                         <div className="text-center">Loading...</div>
                     </div>
-                    
+
                 </div>
             )
         } else {
@@ -68,19 +83,14 @@ class WaitTimeContainer extends React.Component {
                 slidesToScroll: 3
             };
             return (
-                <div className="d-flex" style={{ width: '100%', alignItems: 'center', justifyContent: 'center' }}>
-                    <div style={{ width: '80%', marginRight: 'auto', marginLeft: 'auto' }}>
-                        <MySlider {...settings}>
-                            {this.state.waitTimeData.filter((ride) => ride.isQueueable).map((ride, index) => {
-                                console.log(ride)
-                                return (
-                                    <WaitTime ride={ride} index={index} />
-                                )
-                            })}
-                        </MySlider>
-                    </div>
+                <div className="row row-eq-height border-bottom">
+                    {this.getImportantRides().filter((ride, index) => ride.isQueueable && index <= 6).map((ride, index) => {
+                        console.log(ride)
+                        return (
+                            <WaitTime ride={ride} index={index} />
+                        )
+                    })}
                 </div>
-
             );
         }
     }

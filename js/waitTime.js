@@ -8,8 +8,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MySlider = window.Slider.default;
-
 var WaitTime = function (_React$Component) {
     _inherits(WaitTime, _React$Component);
 
@@ -22,10 +20,16 @@ var WaitTime = function (_React$Component) {
     _createClass(WaitTime, [{
         key: "render",
         value: function render() {
-            if (this.props.ride) {
+            if (this.props.ride && this.props.index !== undefined) {
+                var displayClass = "";
+                if (this.props.index > 0 && this.props.index < 4) {
+                    displayClass = " d-none d-md-block";
+                } else if (this.props.index > 3) {
+                    displayClass = " d-none d-lg-block";
+                }
                 return React.createElement(
                     "div",
-                    { className: this.props.index % 3 !== 2 ? " border-right" : "", style: { textAlign: 'center', height: '100%', padding: 5 } },
+                    { className: "col border-right" + displayClass, style: { textAlign: 'center', paddingHorizontal: 5, paddingBottom: 5, paddingTop: 20 } },
                     React.createElement(
                         "h4",
                         null,
@@ -75,6 +79,8 @@ var WaitTimeContainer = function (_React$Component2) {
             waitTimeData: [],
             loading: false
         };
+
+        _this2.getImportantRides = _this2.getImportantRides.bind(_this2);
         return _this2;
     }
 
@@ -96,6 +102,18 @@ var WaitTimeContainer = function (_React$Component2) {
             }).then(function (responseJSON) {
                 _this3.setState({ waitTimeData: responseJSON, loading: false });
             });
+        }
+    }, {
+        key: "getImportantRides",
+        value: function getImportantRides() {
+            var importantRides = ["Revenge of the Mummy!", "MEN IN BLACK Alien Attack", "Hollywood Rip Ride Rockit", "Harry Potter and the Escape from Gringotts", "Fast & Furious - Supercharged", "Despicable Me Minion Mayhem"];
+            if (this.state.waitTimeData.length <= 6) {
+                return this.state.waitTimeData;
+            } else {
+                return this.state.waitTimeData.filter(function (ride) {
+                    return importantRides.indexOf(ride.name) > -1;
+                });
+            }
         }
     }, {
         key: "render",
@@ -125,21 +143,13 @@ var WaitTimeContainer = function (_React$Component2) {
                 };
                 return React.createElement(
                     "div",
-                    { className: "d-flex", style: { width: '100%', alignItems: 'center', justifyContent: 'center' } },
-                    React.createElement(
-                        "div",
-                        { style: { width: '80%', marginRight: 'auto', marginLeft: 'auto' } },
-                        React.createElement(
-                            MySlider,
-                            settings,
-                            this.state.waitTimeData.filter(function (ride) {
-                                return ride.isQueueable;
-                            }).map(function (ride, index) {
-                                console.log(ride);
-                                return React.createElement(WaitTime, { ride: ride, index: index });
-                            })
-                        )
-                    )
+                    { className: "row row-eq-height border-bottom" },
+                    this.getImportantRides().filter(function (ride, index) {
+                        return ride.isQueueable && index <= 6;
+                    }).map(function (ride, index) {
+                        console.log(ride);
+                        return React.createElement(WaitTime, { ride: ride, index: index });
+                    })
                 );
             }
         }
