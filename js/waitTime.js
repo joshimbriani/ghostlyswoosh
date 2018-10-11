@@ -106,7 +106,7 @@ var WaitTimeContainer = function (_React$Component2) {
     }, {
         key: "getImportantRides",
         value: function getImportantRides() {
-            var importantRides = ["Revenge of the Mummy!", "MEN IN BLACK Alien Attack", "Hollywood Rip Ride Rockit", "Harry Potter and the Escape from Gringotts", "Fast & Furious - Supercharged", "Despicable Me Minion Mayhem"];
+            var importantRides = ["Revenge of the Mummy", "MEN IN BLACK Alien Attack", "Hollywood Rip Ride Rockit", "Harry Potter and the Escape from Gringotts", "Fast & Furious - Supercharged", "Despicable Me Minion Mayhem"];
             if (this.state.waitTimeData.length <= 6) {
                 return this.state.waitTimeData;
             } else {
@@ -147,7 +147,6 @@ var WaitTimeContainer = function (_React$Component2) {
                     this.getImportantRides().filter(function (ride, index) {
                         return ride.isQueueable && index <= 6;
                     }).map(function (ride, index) {
-                        console.log(ride);
                         return React.createElement(WaitTime, { ride: ride, index: index });
                     })
                 );

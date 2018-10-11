@@ -55,7 +55,7 @@ class WaitTimeContainer extends React.Component {
     }
 
     getImportantRides() {
-        const importantRides = ["Revenge of the Mummy!", "MEN IN BLACK Alien Attack", "Hollywood Rip Ride Rockit", "Harry Potter and the Escape from Gringotts", "Fast & Furious - Supercharged", "Despicable Me Minion Mayhem"]
+        const importantRides = ["Revenge of the Mummy", "MEN IN BLACK Alien Attack", "Hollywood Rip Ride Rockit", "Harry Potter and the Escape from Gringotts", "Fast & Furious - Supercharged", "Despicable Me Minion Mayhem"]
         if (this.state.waitTimeData.length <= 6) {
             return this.state.waitTimeData;
         } else {
@@ -85,7 +85,6 @@ class WaitTimeContainer extends React.Component {
             return (
                 <div className="row row-eq-height border-bottom">
                     {this.getImportantRides().filter((ride, index) => ride.isQueueable && index <= 6).map((ride, index) => {
-                        console.log(ride)
                         return (
                             <WaitTime ride={ride} index={index} />
                         )

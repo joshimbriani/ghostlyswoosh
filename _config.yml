@@ -11,7 +11,7 @@ collections:
   posts:
     title: Posts
     output: true
-    permalink: "/news/:title"
+    permalink: "/updates/:title"
   areas:
     title: Areas
     output: true
