@@ -2,9 +2,9 @@
 name: Kang and Kodos Tilt and Hurl
 type: ride
 layout: ride
-cover: kkth.jpg
-icon: kkth.jpg
-backgroundclass: et
+cover: kang.jpg
+icon: kang.jpg
+area: Springfield
 tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
 ---
 

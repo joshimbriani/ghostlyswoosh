@@ -1,5 +1,18 @@
 ---
 ---
 // 🎌 IMPORT ALL THE STUFF—I LET JEKYLL HANDLE THE SASS 🎌
-@import 'variables';
+@import '_variables';
+@import '_mixins';
+
+@import '_global';
+
+@import '_navbar';
+@import '_pagemasthead';
+@import '_masthead';
+@import '_services';
+@import '_portfolio';
+@import '_timeline';
+@import '_team';
+@import '_contact';
+@import '_footer';
 @import 'site';

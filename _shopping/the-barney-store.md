@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: tbs.jpg
 icon: tbs.jpg
+area: KidZone
 ---

@@ -4,4 +4,5 @@ type: dining
 layout: dining 
 cover: rbc.jpg
 icon: rbc.jpg
+area: San Francisco
 ---

@@ -4,4 +4,5 @@ type: dining
 layout: dining 
 cover: sfpc.jpg
 icon: sfpc.jpg
+area: San Francisco
 ---

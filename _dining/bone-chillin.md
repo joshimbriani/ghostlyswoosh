@@ -4,4 +4,5 @@ type: dining
 layout: dining 
 cover: bc.jpg
 icon: bc.jpg
+area: Production Central
 ---

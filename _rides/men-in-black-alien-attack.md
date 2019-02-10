@@ -2,9 +2,9 @@
 name: Men In Black&#58; Alien Attack
 type: ride
 layout: ride
-cover: mibaa.jpg
-icon: mibaa.jpg
-backgroundclass: et
+cover: mib.jpg
+icon: mib.jpg
+area: World Expo
 tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
 ---
 

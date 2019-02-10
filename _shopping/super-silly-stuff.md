@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: sss.jpg
 icon: sss.jpg
+area: Production Central
 ---

@@ -4,4 +4,5 @@ type: show
 layout: show
 cover: cwatb.jpg
 icon: cwatb.jpg
+area: Diagon Alley
 ---

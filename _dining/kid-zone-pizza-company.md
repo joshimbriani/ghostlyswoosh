@@ -4,4 +4,5 @@ type: dining
 layout: dining 
 cover: kzpc.jpg
 icon: kzpc.jpg
+area: KidZone
 ---

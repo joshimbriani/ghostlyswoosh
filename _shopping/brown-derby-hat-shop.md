@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: bdhs.jpg
 icon: bdhs.jpg
+area: Hollywood
 ---

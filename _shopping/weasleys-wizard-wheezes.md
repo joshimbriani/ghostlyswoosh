@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: www.jpg
 icon: www.jpg
+area: Diagon Alley
 ---

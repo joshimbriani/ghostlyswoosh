@@ -4,7 +4,7 @@ type: ride
 layout: ride
 cover: gringotts.jpg
 icon: gringotts.jpg
-backgroundclass: gringotts
+area: Diagon Alley
 tagline: After thousands of years, Gringotts Bank, the safest place in the world, is finally opening its doors to Muggles. The friendly Gringotts goblins would be glad to give tours to Muggle guests. Who knows, you may even be able to spot such wizarding celebrities as Harry Potter or Hermione Granger!
 ---
 <div class="container">

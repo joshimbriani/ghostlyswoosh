@@ -4,4 +4,5 @@ type: show
 layout: show
 cover: aditpwb.jpg
 icon: aditpwb.jpg
+area: KidZone
 ---

@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: ettc.jpg
 icon: ettc.jpg
+area: KidZone
 ---

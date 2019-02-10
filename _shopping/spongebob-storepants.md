@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: spst.jpg
 icon: spst.jpg
+area: KidZone
 ---

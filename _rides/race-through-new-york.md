@@ -2,9 +2,9 @@
 name: Race Through New York Starring Jimmy Fallon
 type: ride
 layout: ride
-cover: rtnysjf.jpg
-icon: rtnysjf.jpg
-backgroundclass: et
+cover: fallon.jpg
+icon: fallon.jpg
+area: New York
 tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
 ---
 

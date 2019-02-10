@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: cyberimage.jpg
 icon: cyberimage.jpg
+area: Hollywood
 ---

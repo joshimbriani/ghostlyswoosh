@@ -4,4 +4,5 @@ type: show
 layout: show
 cover: aaol.jpg
 icon: aaol.jpg
+area: KidZone
 ---

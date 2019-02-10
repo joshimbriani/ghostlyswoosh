@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: syoss.jpg
 icon: syoss.jpg
+area: Production Central
 ---

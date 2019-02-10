@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: ollivanders.jpg
 icon: ollivanders.jpg
+area: Diagon Alley
 ---

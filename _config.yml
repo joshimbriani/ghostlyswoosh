@@ -43,6 +43,7 @@ gems:
 excerpt_seperator: "<!--more-->"
 destination: "./build"
 permalink: "/:title"
+include: ['_pages']
 exclude:
   - components
   - Gemfile

@@ -2,54 +2,28 @@
 <html>
 {% include head.html %}
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-            <div class="container">
-                <a href="/" class="navbar-brand mr-auto">Ghostly Swoosh</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse align-middle" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                The Park
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/areas/">Areas</a>
-                                <a class="dropdown-item" href="/rides/">Rides</a>
-                                <a class="dropdown-item" href="/shows/">Shows</a>
-                                <a class="dropdown-item" href="/dining/">Dining</a>
-                                <a class="dropdown-item" href="/shopping/">Rides</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/forum/">Forum</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about/">About</a>
-                        </li>
-                    </ul>
+<body id="page-top">
+    <!-- Navigation -->
+    {% include nav.html %}
+    <header class="masthead">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1">
+
                 </div>
-            </div>
-        </nav>
-        <div class="view homehero">
-            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5">
-                            <h1 class="h1-responsive font-weight-bold mt-sm-5">Fast and Furious: Supercharged </h1>
-                            <hr class="hr-light">
-                            <h6 class="mb-4">The newest ride at Universal Studios Florida. Check out our <a href="/rides/fast-and-furious">ride
-                                    page</a> for this awesome new adventure and read our in depth review!
-                            </h6>
-                        </div>
+                <div class="col-md-4">
+                    <div class="intro-text">
+                        <div class="intro-lead-in">Fast and Furious: Supercharged</div>
+                        <div class="intro-heading text-uppercase">The newest ride at Universal Studios Florida. Check
+                            out our <a href="/rides/fast-and-furious">ride page</a> for this awesome new adventure and
+                            read our in depth review!</div>
                     </div>
                 </div>
+                <div class="col-md-7">
+
+                </div>
             </div>
+
         </div>
     </header>
     <main>
@@ -63,13 +37,8 @@
     <script src="{{ site.baseurl }}/js/popper.min.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-slick/0.23.1/react-slick.js"></script>
-    <script src="{{ site.baseurl }}/js/waitTime.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+    <script src="{{ site.baseurl }}/js/home.js"></script>
 </body>
 
 </html>

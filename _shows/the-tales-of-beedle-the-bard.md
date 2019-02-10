@@ -4,4 +4,5 @@ type: show
 layout: show
 cover: ttobtb.jpg
 icon: ttobtb.jpg
+area: Diagon Alley
 ---

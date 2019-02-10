@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: ssc.jpg
 icon: ssc.jpg
+area: New York
 ---

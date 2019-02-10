@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: sps.jpg
 icon: sps.jpg
+area: Diagon Alley
 ---

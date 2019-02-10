@@ -4,4 +4,5 @@ type: dining
 layout: dining 
 cover: fff.jpg
 icon: fff.jpg
+area: Diagon Alley
 ---

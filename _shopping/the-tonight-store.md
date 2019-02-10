@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: tts.jpg
 icon: tts.jpg
+area: New York
 ---

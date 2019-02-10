@@ -2,13 +2,22 @@
 <html>
 {% include head.html %}
 
-<body>
-    {{ content }}
+<body id="page-top">
+    <!-- Navigation -->
+    {% include nav.html %}
+    <main>
+        {{ content }}
+    </main>
+    <footer class="footer">
+        {% include footer.html %}
+    </footer>
+    </div>
     <script src="{{ site.baseurl }}/js/jquery-3.3.1.min.js"></script>
     <script src="{{ site.baseurl }}/js/popper.min.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+    <script src="{{ site.baseurl }}/js/home.js"></script>
 </body>
 
 </html>

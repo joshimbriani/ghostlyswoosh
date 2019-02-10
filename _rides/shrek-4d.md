@@ -2,9 +2,9 @@
 name: Shrek 4D
 type: ride
 layout: ride
-cover: s4d.jpg
-icon: s4d.jpg
-backgroundclass: et
+cover: shrek.jpg
+icon: shrek.jpg
+area: Production Central
 tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
 ---
 

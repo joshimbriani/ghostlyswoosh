@@ -4,4 +4,5 @@ type: dining
 layout: dining 
 cover: ffb.jpg
 icon: ffb.jpg
+area: Springfield
 ---

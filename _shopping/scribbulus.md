@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: scribbulus.jpg
 icon: scribbulus.jpg
+area: Diagon Alley
 ---

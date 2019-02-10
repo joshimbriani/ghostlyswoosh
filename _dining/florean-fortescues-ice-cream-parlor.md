@@ -4,4 +4,5 @@ type: dining
 layout: dining 
 cover: fficp.jpg
 icon: fficp.jpg
+area: Diagon Alley
 ---

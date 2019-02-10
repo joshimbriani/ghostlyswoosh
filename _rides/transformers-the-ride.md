@@ -2,9 +2,9 @@
 name: Transformers&#58; The Ride 3D
 type: ride
 layout: ride
-cover: ttr3d.jpg
-icon: ttr3d.jpg
-backgroundclass: et
+cover: transformers.jpg
+icon: transformers.jpg
+area: New York
 tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
 ---
 

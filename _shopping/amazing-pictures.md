@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: ap.jpg
 icon: ap.jpg
+area: San Francisco
 ---

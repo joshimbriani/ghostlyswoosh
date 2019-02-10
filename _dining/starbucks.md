@@ -4,4 +4,5 @@ type: dining
 layout: dining 
 cover: sb.jpg
 icon: sb.jpg
+area: New York
 ---

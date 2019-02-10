@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: kem.jpg
 icon: kem.jpg
+area: Springfield
 ---

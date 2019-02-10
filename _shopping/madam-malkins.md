@@ -4,4 +4,5 @@ type: shopping
 layout: shopping
 cover: madammalkins.jpg
 icon: madammalkins.jpg
+area: Diagon Alley
 ---
