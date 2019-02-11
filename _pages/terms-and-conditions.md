@@ -2,6 +2,7 @@
 layout: page
 title: Terms and Conditions
 color: grey
+permalink: /terms-and-conditions
 ---
 
 ### Introduction

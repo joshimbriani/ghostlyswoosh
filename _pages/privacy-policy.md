@@ -2,6 +2,7 @@
 layout: page
 title: Privacy Policy
 color: grey
+permalink: /privacy-policy
 ---
 
 Effective date: February 10, 2019

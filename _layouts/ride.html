@@ -1,57 +1,27 @@
 ---
-layout: base
+layout: default
 ---
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-        <div class="container">
-            <a href="/" class="navbar-brand mr-auto">Ghostly Swoosh</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse align-middle" id="navbarTogglerDemo01">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            The Park
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/areas/">Areas</a>
-                            <a class="dropdown-item" href="/rides/">Rides</a>
-                            <a class="dropdown-item" href="/shows/">Shows</a>
-                            <a class="dropdown-item" href="/dining/">Dining</a>
-                            <a class="dropdown-item" href="/shopping/">Rides</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/forum/">Forum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about/">About</a>
-                    </li>
-                </ul>
+<header class="masthead" style="background-image: url('../images/rides/cover/{{page.cover}}')">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+
             </div>
-        </div>
-    </nav>
-    <div class="view {{ page.backgroundclass }} ridehero">
-        <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5">
-                        <h1 class="h1-responsive font-weight-bold mt-sm-5">{{ page.name }}</h1>
-                        <hr class="hr-light">
-                        <h6 class="mb-4">{{ page.tagline }}</h6>
-                    </div>
+            <div class="col-md-4">
+                <div class="intro-text">
+                    <div class="intro-lead-in">{{ page.name }}</div>
+                    <div class="intro-heading text-uppercase">{{page.tagline}}</div>
                 </div>
             </div>
+            <div class="col-md-7">
+
+            </div>
         </div>
+
     </div>
 </header>
+
 <main>
     {{ content }}
 </main>
-<footer>
-
-</footer>
