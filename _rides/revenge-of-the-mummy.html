@@ -1,0 +1,172 @@
+---
+name: Revenge of the Mummy
+type: ride
+layout: ride
+imagePrefix: rotm
+numPics: 2
+area: New York
+marketingp: Come be an extra on the set of the new movie in the Mummy franchise (Brendan Fraiser, not Tom Cruise), Revenge of the Mummy! But as you go through the queue line, you start to feel that something isn’t right. Imhotep is back and as you’re filming your scene, he attacks! Will you survive? Ride and find out!
+blurb: Can you survive Imhotep?
+technicaldesc: A high speed roller coaster ride featuring several intense, scary dark ride scenes
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Themed Description</h2>
+            <p>
+                {{page.marketingp}}
+            </p>
+            <h2>Technical Description</h2>
+            <p>
+                {{page.technicaldesc}}
+            </p>
+            <h2>Ride Stats</h2>
+            <ul>
+                <li><strong>Length</strong> • 2200 ft</li>
+                <li><strong>Height</strong> • 44.4 ft</li>
+                <li><strong>Speed</strong> • 40 mph</li>
+                <li><strong>Max Angle of Descent</strong> • 50*</li>
+                <li><strong>Duration</strong> • 2:57</li>
+                <li><strong>Manufacturer</strong> • Premier Rides</li>
+                <li><strong>Cost</strong> • $40,000,000</li>
+            </ul>
+            
+        </div>
+        <div class="col-md-1">
+            
+        </div>
+        <div class="col-md-4">
+            <h2>Current Wait Time</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Quick Facts</h2>
+            <p>
+                <ul>
+                    <li>Originally was supposed to be themed to Apollo 13.</li>
+                    <li>Replaced the Kongfrontation ride.</li>
+                    <li>Kongfrontation tributes exist in the ride. When entering the treasure room, look for the golden
+                        Kong statue to your left.</li>
+                    <li>Since the Kongfrontation track was built into the building structure, some pieces of it still
+                        exist today.</li>
+                    <li>Some of the hieroglyphs in the ride spell out actual warnings for guests.</li>
+                    <li>The flame ceiling effect in the fake unload room is known as "brain fire" and features real
+                        flames of up to 3400*.</li>
+                    <li>The queue features several interactive effects: if two guests touch the sides of the ark in the
+                        first "tomb" room, the ceiling will glow red and the medjai symbol will appear. Try to grab the
+                        jewel in a wall nook and you might find yourself hit by a blast of air!</li>
+                    <li>U.C. and Sons appears on the front of the ride vehicles. This stands for Universal Creative.
+                    </li>
+                </ul>
+            </p>
+            <h2>The Story</h2>
+            <p>
+                As you enter the queue, you find yourself in line to be an extra in a sequel to the 2001 movie, <a
+                    href="https://www.imdb.com/title/tt0209163/">The Mummy Returns</a>. You go past costumes and
+                bulletin boards advertising cast gatherings and announcements. Videos in the queue explain that some
+                bad/unlucky things have been happening on set and seemingly the only way to avoid them is to wear a
+                medjai symbol. Brendan Fraser doesn't believe this and catering refuses to sell him coffee. As you go
+                further into the queue, it slowly morphs into a real tomb, complete with some interactive queue
+                elements. You go past a massive statue of Anubis until you enter the station and board your 4x4 ride
+                vehicles. As you leave the station, you go past Reggie, a cast member previously mentioned in the queue
+                videos, mummified and warning you that the curse is real and that Imhotep is out to get you. Then
+                Imhotep bursts out of a coffin, sucks Reggie's soul out and informs us that he aims to have our souls
+                too. We enter the treasure room where Imhotep's giant face tells us that if we serve him we can receive
+                riches beyond measure as a vast glittering pile of treasure lights up or that if we refuse him, we'll
+                suffer a more bitter treasure as flames and his warrior mummies pop up. We slip under a closing wall
+                only to come to a halt in front of a blank wall until suddenly scarab beatles come pouring out and we
+                accelerate backwards to avoid them. We come to a stop and see Imhotep's face following us as we rotate.
+                He tells us that it's too late for the medjai to save us and we launch upwards into the roller coaster
+                section of the ride. We pass under mummy cutouts and travel through pitch black until we enter the
+                unload platform. As the ride attendent greets us, we see her soul being consumed by Imhotep who breaks
+                through the glass and lights the ceiling on fire. We launch out of the station into the largest drop on
+                the ride and experience a brief coaster section before we pull hear Imhotep scream as we pass under the
+                glittering sign of the medjai and safely back into the real unload station. Brendan Fraser greets us and
+                screams as a mummy hand hands him his cup of coffee. The music swells and we exit into Sahara Traders.
+            </p>
+            <h2>Photos</h2>
+            {% if page.numPics == 0 %}
+                <p>We're out gathering pictures now! But none right now.</p> 
+            {% else %}
+                <div class="container">
+                    <div class="row">
+                        {% for i in (1..page.numPics) %}
+                            <div class="col-md-6">
+                                <a href="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" data-toggle="lightbox" data-gallery="{{page.name}}">
+                                    <img class="img-fluid" src="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" alt="{{page.name}}">
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div> 
+            {% endif %}
+            <h2>Videos</h2>
+            <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=q8orPZ3-dXs" data-toggle="lightbox" data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/q8orPZ3-dXs/0.jpg" alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=drQICh39ugU" data-toggle="lightbox" data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/drQICh39ugU/0.jpg" alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=MmBXNw_Iv7s" data-toggle="lightbox" data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/MmBXNw_Iv7s/0.jpg" alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=eD5CbRf0r4I" data-toggle="lightbox" data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/eD5CbRf0r4I/0.jpg" alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=QPmigUri0Xo" data-toggle="lightbox" data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/QPmigUri0Xo/0.jpg" alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=aPaXnDO_t6w" data-toggle="lightbox" data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/aPaXnDO_t6w/0.jpg" alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=9z66nqs1cJw" data-toggle="lightbox" data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/9z66nqs1cJw/0.jpg" alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=H02jTkX7aOg" data-toggle="lightbox" data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/H02jTkX7aOg/0.jpg" alt="{{page.name}}">
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Updates, News, Articles and Rumors</h2>
+            {% assign psize = site.categories.rotm | size %}
+            {% if psize == 0 %} 
+                <p>No posts ... yet!</p>
+            {% endif %}
+            <div class="row">
+                {% for post in site.categories.rotm %}
+                    <div class="col-md-6">
+                        <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+                        <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+                        <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
