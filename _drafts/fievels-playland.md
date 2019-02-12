@@ -5,7 +5,9 @@ layout: ride
 cover: fip.jpg
 icon: fip.jpg
 area: KidZone
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+blurb:
+technicaldesc:
 ---
 
 <div class="row">

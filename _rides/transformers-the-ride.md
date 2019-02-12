@@ -5,7 +5,9 @@ layout: ride
 cover: transformers.jpg
 icon: transformers.jpg
 area: New York
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: NEST is preparing to transport the All Spark to another facility but we’ve heard rumors that Megatron and the Decpticons are preparing to intercept the transport. That’s why we’re looking for recruits to ride along with the Autobot Evac and make sure that the All Spark stays safe!
+blurb: Help protect NEST from Megatron!
+technicaldesc: A dark ride featuring quick movements and 4D effects.
 ---
 
 <div class="row">

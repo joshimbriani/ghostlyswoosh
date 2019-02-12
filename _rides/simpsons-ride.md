@@ -5,7 +5,9 @@ layout: ride
 cover: simpsons.jpg
 icon: simpsons.jpg
 area: Springfield
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: Step right up and welcome to Krustyland! Come take a tour of the House that Krusty built. We have plenty of thrilling rides and attractions. We are legally obligated to mention that convict Sideshow Bob has escaped and was last sighted at our park but have no fear, our security team will find him!
+blurb: Welcome to Krustyland!
+technicaldesc: A simulator ride featuring articulating ride vehicles in front of a projection dome.
 ---
 
 <div class="row">

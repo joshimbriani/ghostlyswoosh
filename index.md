@@ -61,7 +61,7 @@ layout: homepage
       <div class="container-fluid">
         <div class="row">
           {% for post in site.posts limit:1 %}
-            <div class="col">
+            <div class="col-md-6">
               <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
               <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
               <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>

@@ -5,7 +5,9 @@ layout: ride
 cover: fnf.jpg
 icon: fnf.jpg
 area: San Francisco
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: You’ve seen the movies, now you’re invited to join the family for the party of your life! There’s nothing to worry about and even if there were, the entire family will protect you!
+blurb: Ride along with the family!
+technicaldesc: A motion simulator ride that combines screens and practical effects.
 ---
 
 <div class="row">

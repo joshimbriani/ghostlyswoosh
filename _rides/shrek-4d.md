@@ -5,7 +5,9 @@ layout: ride
 cover: shrek.jpg
 icon: shrek.jpg
 area: Production Central
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: Picking up right where the movie left off. Join Shrek as he leaves for his honeymoon. As you might expect, something goes wrong and it’s up to you, Shrek and Donkey to save the day!
+blurb: Help Shrek and Donkey save Fiona!
+technicaldesc: A motion simulator with moving seats synchronized with the film
 ---
 
 <div class="row">

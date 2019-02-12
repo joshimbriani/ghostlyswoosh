@@ -5,7 +5,9 @@ layout: ride
 cover: kang.jpg
 icon: kang.jpg
 area: Springfield
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: Pay no attention to the odd green forms supporting the ride carousels. They definitely aren’t space aliens set on destroying Springfield. Step aboard and prepare for a thrilling spin, fun will be had by all!
+blurb: Spin on the tentacles of Kang or Kodos!
+technicaldesc: A spinning ride in which riders sit in individual gondolas and spin around a central axis.
 ---
 
 <div class="row">

@@ -5,7 +5,9 @@ layout: ride
 cover: fallon.jpg
 icon: fallon.jpg
 area: New York
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: Have you ever wanted to be a part of the Jimmy Fallon show? Well now’s your chance! Jimmy has tickets saved for you to be a part of his audience! Enjoy the tonight show building and its history exhibits for the various Tonight Show hosts, live performances by Hashtag the Panda and the Ragtime Gals as well as the main attraction, a race through New York City between Jimmy and the audience, you!
+blurb: Race through New York with Jimmy Fallon!
+technicaldesc: A simulator ride with moving seats simulating a race with 4D effects.
 ---
 
 <div class="row">

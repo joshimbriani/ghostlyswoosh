@@ -5,7 +5,9 @@ layout: ride
 cover: hrrr.jpg
 icon: hrrr.jpg
 area: Production Central
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: What’s the only thing better than music? A roller coaster! Universal decided to combine the two and got Hollywood Rip Ride and Rocket. Strap in and choose your song and be taken skyward up the 167 ft vertical lift hill and then into a wild series of elements including a huge non-inverting loop. Are you ready to rock it?
+blurb: Listen to your choice of music while you ride an exciting coaster!
+technicaldesc: An intense roller coaster featuring a vertical lift, a non-inverting loop and several over-banked turns.
 ---
 
 <div class="row">

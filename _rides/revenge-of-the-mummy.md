@@ -5,7 +5,9 @@ layout: ride
 cover: rotm.jpg
 icon: rotm.jpg
 area: New York
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: Come be an extra on the set of the new movie in the Mummy franchise (Brendan Fraiser, not Tom Cruise), Revenge of the Mummy! But as you go through the queue line, you start to feel that something isn’t right. Imhotep is back and as you’re filming your scene, he attacks! Will you survive? Ride and find out!
+blurb: Can you survive Imhotep?
+technicaldesc: A high speed roller coaster ride featuring several intense, scary dark ride scenes
 ---
 
 <div class="row">

@@ -5,7 +5,9 @@ layout: ride
 cover: dmmm.jpg
 icon: dmmm.jpg
 area: Production Central
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: "Wouldn’t it be great if you could become a Minion from the Despicable Me movies? Well now you can! Despicable Me: Minion Mayhem, will transform a whole theater full of lucky recruits into Minions. But before you can complete your Minion-ization, you must pass the standard minion test. Try your luck at Despicable Me: Minion Mayhem."
+blurb: Are you ready to become a minion?
+technicaldesc: A simulator ride with simulated drops and turns.
 ---
 
 <div class="row">

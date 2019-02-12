@@ -5,7 +5,9 @@ layout: ride
 cover: mib.jpg
 icon: mib.jpg
 area: World Expo
-tagline: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+marketingp: "The World’s Fair is in town and you’re welcome to hear the answer to the age old question: Are we alone? *Halt simulation* Listen up Men In Black Recruits, you’ve been chosen to participate in a training mission but if it goes wrong, it’ll be good to have some help defending the galaxy against the worst of the aliens. *End simulation* Of course we’re alone!"
+blurb: Save the world from alien invaders!
+technicaldesc: A dark ride with occasional intense spinning in which riders shoot targets and accumulate points.
 ---
 
 <div class="row">
