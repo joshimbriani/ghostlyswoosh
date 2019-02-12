@@ -2,6 +2,7 @@
 name: Shrek 4D
 type: ride
 layout: ride
+imagePrefix: shrek
 cover: shrek.jpg
 icon: shrek.jpg
 area: Production Central

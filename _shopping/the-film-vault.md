@@ -2,7 +2,8 @@
 name: The Film Vault
 type: shopping
 layout: shopping
-cover: ssc.jpg
-icon: ssc.jpg
+imagePrefix: tfv
+cover: tfv.jpg
+icon: tfv.jpg
 area: New York
 ---

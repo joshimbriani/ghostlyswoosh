@@ -2,6 +2,7 @@
 name: Kang and Kodos Tilt and Hurl
 type: ride
 layout: ride
+imagePrefix: kang
 cover: kang.jpg
 icon: kang.jpg
 area: Springfield

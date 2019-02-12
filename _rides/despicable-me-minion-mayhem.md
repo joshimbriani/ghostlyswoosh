@@ -2,6 +2,7 @@
 name: Despicable Me&#58; Minion Mayhem
 type: ride
 layout: ride
+imagePrefix: dmmm
 cover: dmmm.jpg
 icon: dmmm.jpg
 area: Production Central

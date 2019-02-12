@@ -19,7 +19,7 @@ permalink: /shows/
                     <div class="row">
                         {% for show in area.items %}
                             <div class="col-md-6">
-                                <a href="{{ site.baseurl }}{{ show.url }}"><img src="{{ site.baseurl }}/images/shows/icon/{{ show.icon }}" alt="{{show.name}}" class="img-fluid" />
+                                <a href="{{ site.baseurl }}{{ show.url }}"><img src="{{ site.baseurl }}/images/shows/icon/{{ show.imagePrefix }}.jpg" alt="{{show.name}}" class="img-fluid" />
                                 </a>
                                 <h4><a href="{{ site.baseurl }}{{ show.url }}">{{ ride.name }}</a></h4>
                             </div>

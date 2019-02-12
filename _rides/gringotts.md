@@ -2,6 +2,7 @@
 name: Harry Potter and the Escape from Gringotts
 type: ride
 layout: ride
+imagePrefix: gringotts
 cover: gringotts.jpg
 icon: gringotts.jpg
 area: Diagon Alley

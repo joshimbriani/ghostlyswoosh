@@ -2,6 +2,7 @@
 name: Fast and Furious&#58; Supercharged
 type: ride
 layout: ride
+imagePrefix: fnf
 cover: fnf.jpg
 icon: fnf.jpg
 area: San Francisco

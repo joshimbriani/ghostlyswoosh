@@ -2,6 +2,7 @@
 name: Hogwarts Express - Diagon Alley
 type: ride
 layout: ride
+imagePrefix: kingscross
 cover: kingscross.jpg
 icon: kingscross.jpg
 area: London

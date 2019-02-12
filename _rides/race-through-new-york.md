@@ -2,6 +2,7 @@
 name: Race Through New York Starring Jimmy Fallon
 type: ride
 layout: ride
+imagePrefix: fallon
 cover: fallon.jpg
 icon: fallon.jpg
 area: New York

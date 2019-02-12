@@ -2,6 +2,7 @@
 name: Men In Black&#58; Alien Attack
 type: ride
 layout: ride
+imagePrefix: mib
 cover: mib.jpg
 icon: mib.jpg
 area: World Expo

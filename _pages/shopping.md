@@ -19,7 +19,7 @@ permalink: /shopping/
                     <div class="row">
                         {% for shopping in area.items %}
                             <div class="col-md-6">
-                                <a href="{{ site.baseurl }}{{ shopping.url }}"><img src="{{ site.baseurl }}/images/shopping/icon/{{ shopping.icon }}" alt="{{shopping.name}}" class="img-fluid" />
+                                <a href="{{ site.baseurl }}{{ shopping.url }}"><img src="{{ site.baseurl }}/images/shopping/icon/{{ shopping.imagePrefix }}.jpg" alt="{{shopping.name}}" class="img-fluid" />
                                 </a>
                                 <h4><a href="{{ site.baseurl }}{{ shopping.url }}">{{ shopping.name }}</a></h4>
                             </div>

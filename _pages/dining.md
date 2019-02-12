@@ -19,7 +19,7 @@ permalink: /dining/
                     <div class="row">
                         {% for dining in area.items %}
                             <div class="col-md-6">
-                                <a href="{{ site.baseurl }}{{ dining.url }}"><img src="{{ site.baseurl }}/images/dining/icon/{{ dining.icon }}" alt="{{dining.name}}" class="img-fluid" />
+                                <a href="{{ site.baseurl }}{{ dining.url }}"><img src="{{ site.baseurl }}/images/dining/icon/{{ dining.imagePrefix }}.jpg" alt="{{dining.name}}" class="img-fluid" />
                                 </a>
                                 <h4><a href="{{ site.baseurl }}{{ dining.url }}">{{ dining.name }}</a></h4>
                             </div>

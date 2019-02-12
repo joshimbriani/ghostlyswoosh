@@ -2,6 +2,7 @@
 name: Hollywood Rip Ride & Rockit
 type: ride
 layout: ride
+imagePrefix: hrrr
 cover: hrrr.jpg
 icon: hrrr.jpg
 area: Production Central

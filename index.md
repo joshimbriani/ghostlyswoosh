@@ -13,7 +13,7 @@ layout: homepage
           {% for ride in site.rides %}
             {% if ride.name != "Rides" %}
             <div class="item carouselitem">
-              <img src="{{ site.baseurl }}/images/rides/icon/{{ ride.icon }}" alt="{{ride.name}}" class="img-fluid" />
+              <img src="{{ site.baseurl }}/images/rides/icon/{{ ride.imagePrefix }}.jpg" alt="{{ride.name}}" class="img-fluid" />
               <h4><a href="{{ site.baseurl }}{{ ride.url }}">{{ ride.name }}</a></h4>
             </div>
             {% endif %}
@@ -39,7 +39,7 @@ layout: homepage
           {% for area in site.areas %}
             {% if area.name != "Areas Index" %}
             <div class="item carouselitem">
-              <img src="{{ site.baseurl }}/images/areas/icon/{{ area.icon }}" alt="{{area.name}}" class="img-fluid" />
+              <img src="{{ site.baseurl }}/images/areas/icon/{{ area.imagePrefix }}.jpg" alt="{{area.name}}" class="img-fluid" />
               <h4><a href="{{ site.baseurl }}{{ area.url }}">{{ area.name }}</a></h4>
             </div>
             {% endif %}

@@ -2,6 +2,7 @@
 name: ET Adventure
 type: ride
 layout: ride
+imagePrefix: et
 cover: et.jpg
 icon: et.jpg
 area: KidZone

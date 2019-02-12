@@ -2,6 +2,7 @@
 name: The Simpsons Ride
 type: ride
 layout: ride
+imagePrefix: simpsons
 cover: simpsons.jpg
 icon: simpsons.jpg
 area: Springfield

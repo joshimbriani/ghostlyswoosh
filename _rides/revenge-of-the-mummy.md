@@ -2,6 +2,7 @@
 name: Revenge of the Mummy
 type: ride
 layout: ride
+imagePrefix: rotm
 cover: rotm.jpg
 icon: rotm.jpg
 area: New York

@@ -19,7 +19,7 @@ permalink: /rides/
                     <div class="row">
                         {% for ride in area.items %}
                             <div class="col-md-6">
-                                <a href="{{ site.baseurl }}{{ ride.url }}"><img src="{{ site.baseurl }}/images/rides/icon/{{ ride.icon }}" alt="{{ride.name}}" class="img-fluid" />
+                                <a href="{{ site.baseurl }}{{ ride.url }}"><img src="{{ site.baseurl }}/images/rides/icon/{{ ride.imagePrefix }}.jpg" alt="{{ride.name}}" class="img-fluid" />
                                 </a>
                                 <h4><a href="{{ site.baseurl }}{{ ride.url }}">{{ ride.name }}</a></h4>
                             </div>
