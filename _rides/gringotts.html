@@ -117,12 +117,12 @@ technicaldesc: A roller coaster ride featuring some spinning and several high sp
     <div class="row">
         <div class="col-md-12">
             <h2>Updates, News, Articles and Rumors</h2>
-            {% assign psize = site.categories.rotm | size %}
+            {% assign psize = site.categories.gringotts | size %}
             {% if psize == 0 %}
             <p>No posts ... yet!</p>
             {% endif %}
             <div class="row">
-                {% for post in site.categories.rotm %}
+                {% for post in site.categories.gringotts %}
                 <div class="col-md-6">
                     <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
                     <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}"

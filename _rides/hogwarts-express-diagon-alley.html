@@ -1,0 +1,125 @@
+---
+name: Hogwarts Express - Diagon Alley
+type: ride
+layout: ride
+imagePrefix: kingscross
+numPics: 2
+area: London
+marketingp: "The Hogwarts Express is more than just a ride, it’s the preferred way to travel between The Wizarding World of Harry Potter: Hogsmeade and The Wizarding World of Harry Potter: Diagon Alley. Board at Kings Cross or Hogsmeade stations and travel between the two lands while encountering one of a variety of experiences along the way."
+blurb: Take a train ride between the parks!
+technicaldesc: A gentle transportation ride, taking riders from park to park.
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Themed Description</h2>
+            <p>
+                {{page.marketingp}}
+            </p>
+            <h2>Technical Description</h2>
+            <p>
+                {{page.technicaldesc}}
+            </p>
+            <h2>Ride Stats</h2>
+            <ul>
+                <li><strong>Length</strong> • 676 ft</li>
+                <li><strong>Duration</strong> • 4:01</li>
+                <li><strong>Speed</strong> • 7.6 mph</li>
+                <li><strong>Manufacturer</strong> • Doppelmayr Garaventa Group</li>
+            </ul>
+
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-4">
+            <h2>Current Wait Time</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Quick Facts</h2>
+            <p>
+                <ul>
+                    <li>Hogwarts is the first in park, park-to-park transportation ride.</li>
+                    <li>You will need a park-to-park ticket to ride this ride.</li>
+                    <li>The trains carry 30,000 passengers per day.</li>
+                    <li>Passes through the Universal Orlando backlot.</li>
+                    <li>Keep your eye out for the Platform 9 3/4 photo opportunity in Kings Cross Station.</li>
+                    <li>Opened on July 8, 2014.</li>
+                </ul>
+            </p>
+            <h2>The Story</h2>
+            <p>
+                <h5>King's Cross to Hogsmeade</h5>
+                As we enter the station, we are taken past the iconic Platform 9 3/4 entrance that allows wizards to
+                access to Hogwarts Express. We then reach the station where we are loaded into coaches. As we leave
+                Kings Cross, we see Hedwig fly by and dementors creep over buildings. We hear Harry, Ron and Hermione
+                pass by the doors of our coach. The lights then flicker and we see dementors pass by our coach until
+                Harry uses a spell to drive them away. We then see Hagrid greet us and the Ford Anglia fly by. At this
+                point, we arrive at Hogsmead and disembark.
+                <h5>Hogsmeade to King's Cross</h5>
+                As we leave Hogsmeade, we see Hagrid waving goodbye. We hear Harry, Ron and Hermione walk by our coach
+                looking for a compartment. We see Buckbeak flying by and a beautiful vista of Hogwarts. Fred and George
+                fly by telling us to visit their store while we're in Diagon Alley. We see Harry, Ron and Hermione walk
+                by again with Harry grabbing a licorice cpider off of our door. We come up on the buildings of London
+                where we watch the Knight Bus fit through impossible openings. Finally we pull into Kings Cross station
+                and disembark.
+            </p>
+            <h2>Photos</h2>
+            {% if page.numPics == 0 %}
+            <p>We're out gathering pictures now! But none right now.</p>
+            {% else %}
+            <div class="container">
+                <div class="row">
+                    {% for i in (1..page.numPics) %}
+                    <div class="col-md-6 my-3">
+                        <a href="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" data-toggle="lightbox"
+                            data-gallery="{{page.name}}">
+                            <img class="img-fluid" src="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg"
+                                alt="{{page.name}}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            <h2>Videos</h2>
+            <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=fAwtCCdr4FM?t=1798" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/fAwtCCdr4FM/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Updates, News, Articles and Rumors</h2>
+            {% assign psize = site.categories.gringotts | size %}
+            {% if psize == 0 %}
+            <p>No posts ... yet!</p>
+            {% endif %}
+            <div class="row">
+                {% for post in site.categories.gringotts %}
+                <div class="col-md-6">
+                    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}"
+                            itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+                    <p class="">
+                        {% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

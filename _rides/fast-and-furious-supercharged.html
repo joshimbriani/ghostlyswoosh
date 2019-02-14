@@ -1,0 +1,142 @@
+---
+name: Fast and Furious&#58; Supercharged
+type: ride
+layout: ride
+imagePrefix: fnf
+numPics: 6
+area: San Francisco
+marketingp: You’ve seen the movies, now you’re invited to join the family for the party of your life! There’s nothing to worry about and even if there were, the entire family will protect you!
+blurb: Ride along with the family!
+technicaldesc: A motion simulator ride that combines screens and practical effects.
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Themed Description</h2>
+            <p>
+                {{page.marketingp}}
+            </p>
+            <h2>Technical Description</h2>
+            <p>
+                {{page.technicaldesc}}
+            </p>
+            <h2>Ride Stats</h2>
+            <ul>
+                <li><strong>Duration</strong> • 5:30</li>
+            </ul>
+
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-4">
+            <h2>Current Wait Time</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Quick Facts</h2>
+            <p>
+                <ul>
+                    <li>Replaced Diaster: A Major Motion Picture Ride Starring You!</li>
+                    <li>Appeared in an episode of The Impractical Jokers</li>
+                    <li>Opened on April 23, 2018</li>
+                    <li>Many nods to prior Universal attractions exist in the queue.</li>
+                </ul>
+            </p>
+            <h2>The Story</h2>
+            <p>
+                We enter Dom's garage and go past a collection of his cars. We hear from Tej on screens in the queue
+                that the family is holding a post race afterparty and that we're invited! As we make our way to the
+                first pre-show, we walk past more cars, trucks and equipment. We then hear from a cast member telling us
+                about the garage and party only to be interrupted by Mia who tells us some more about the party. We're
+                moved on to Tej's war room where our cast member is again interrupted by Tej and Dom this time who tells
+                us that the FBI are closing in on our location and that Owen Shaw is following us. Tej makes a call to
+                Hobbs who tells us to turn off all of our cell phones so that Hobbs can't track us. We then leave and
+                head for our party buses. We speed through some tunnels while we hear from Hobbs. Hobbs tells us that
+                there's an important witness on our bus which is why Owen Shaw is after us and that we're in danger. We
+                pull past an alleyway filled with revving cars and into a garage where the party is happening. We see
+                the party ongoing until the FBI raids the party. Roman enters the party and is stopped by the FBI agent
+                who is then stopped and escorted out by Dom, Letty and Hobbs. We pull our bus out into a parking garage
+                where Hobbs finally catches up to us with flamethrowers. Dom hustles us out of the garage to safety as
+                Shaw chases us. Eventually, we jump across a river, past Shaw and to safety. Dom comes on our screens
+                and tells us that we're welcome to ride with them anytime. Tej informs us that the party starts now!
+            </p>
+            <h2>Photos</h2>
+            {% if page.numPics == 0 %}
+            <p>We're out gathering pictures now! But none right now.</p>
+            {% else %}
+            <div class="container">
+                <div class="row">
+                    {% for i in (1..page.numPics) %}
+                    <div class="col-md-6 my-3">
+                        <a href="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" data-toggle="lightbox"
+                            data-gallery="{{page.name}}">
+                            <img class="img-fluid" src="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg"
+                                alt="{{page.name}}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            <h2>Videos</h2>
+            <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=yMihHJ1OsD8" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/yMihHJ1OsD8/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=5dJqmP1FZ3w" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/5dJqmP1FZ3w/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=hv7I2loUsPE" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/hv7I2loUsPE/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=A2eBa8O31Ss" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/A2eBa8O31Ss/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Updates, News, Articles and Rumors</h2>
+            {% assign psize = site.categories.fnf | size %}
+            {% if psize == 0 %}
+            <p>No posts ... yet!</p>
+            {% endif %}
+            <div class="row">
+                {% for post in site.categories.fnf %}
+                <div class="col-md-6">
+                    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}"
+                            itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+                    <p class="">
+                        {% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

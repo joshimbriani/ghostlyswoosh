@@ -1,0 +1,141 @@
+---
+name: ET Adventure
+type: ride
+layout: ride
+imagePrefix: et
+numPics: 2
+area: KidZone
+marketingp: Ever wondered what happened after the E.T. movie ended? Follow along as E.T. takes riders back to his home planet in the signature flying bikes from the movie. But first, guests must evade capture as they make their way out of the base where E.T. is kept.
+blurb: Help E.T. save his planet!
+technicaldesc: Gentle suspended dark ride taking guests past animatronics and sets.
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Themed Description</h2>
+            <p>
+                {{page.marketingp}}
+            </p>
+            <h2>Technical Description</h2>
+            <p>
+                {{page.technicaldesc}}
+            </p>
+            <h2>Ride Stats</h2>
+            <ul>
+                <li><strong>Duration</strong> • 4:30</li>
+                <li><strong>Height</strong> • 5 ft</li>
+                <li><strong>Speed</strong> • 5 mph</li>
+            </ul>
+
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-4">
+            <h2>Current Wait Time</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Quick Facts</h2>
+            <p>
+                <ul>
+                    <li>E.T. Adventure is the last remaining opening day attraction left at the park.</li>
+                    <li>There are a few photo opportunities in the gift shop after the ride.</li>
+                    <li>Opened on June 7, 1990</li>
+                </ul>
+            </p>
+            <h2>The Story</h2>
+            <p>
+                In the queue, we can watch monitors showing us E.T. trivia and showing us filmmaker commentary about the
+                movie. We enter the next room where Steven Spielberg comes on the screen telling us that E.T.'s home
+                planet, the Green Planet, is dying and that it needs his healing touch to save it. We need to help him
+                get there aboard flying bikes. We pick up our Interplanetary Passport and tell the cast member our name
+                which gets programmed into the card. We enter the second queue which is a forest filled with a unique
+                scent. We learn that the police are after E.T. and us. As we board our bikes, we ride through the forest
+                and slip past NASA and the police who try to capture us. We almost run right into a police car until we
+                leave the ground and start flying. We fly over a city where we can make out individual landmarks. We
+                enter an intergalactic portal which takes us to E.T.'s planet, which is visibly dying. We meet his
+                teacher Botanticus who tells us what we need to do to save it. E.T. uses his healing touch to bring the
+                planet back to life and the planet's inhabitants start celebrating. We travel through this celebration
+                until we pass by E.T. himself who thanks us by the name we gave earlier in the ride. We head back to
+                Earth where we leave the bikes.
+            </p>
+            <h2>Photos</h2>
+            {% if page.numPics == 0 %}
+            <p>We're out gathering pictures now! But none right now.</p>
+            {% else %}
+            <div class="container">
+                <div class="row">
+                    {% for i in (1..page.numPics) %}
+                    <div class="col-md-6 my-3">
+                        <a href="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" data-toggle="lightbox"
+                            data-gallery="{{page.name}}">
+                            <img class="img-fluid" src="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg"
+                                alt="{{page.name}}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            <h2>Videos</h2>
+            <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=3TD0_-RO9_w" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/3TD0_-RO9_w/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=_D4c2vTbgFE" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/_D4c2vTbgFE/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=a3SkLX_Ufrc" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/a3SkLX_Ufrc/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=4nXS4J15sd0" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/4nXS4J15sd0/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Updates, News, Articles and Rumors</h2>
+            {% assign psize = site.categories.et | size %}
+            {% if psize == 0 %}
+            <p>No posts ... yet!</p>
+            {% endif %}
+            <div class="row">
+                {% for post in site.categories.et %}
+                <div class="col-md-6">
+                    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}"
+                            itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+                    <p class="">
+                        {% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
