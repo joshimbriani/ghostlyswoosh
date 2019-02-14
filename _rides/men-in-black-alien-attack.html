@@ -1,0 +1,154 @@
+---
+name: Men In Black&#58; Alien Attack
+type: ride
+layout: ride
+imagePrefix: mib
+numPics: 6
+area: World Expo
+marketingp: "The World’s Fair is in town and you’re welcome to hear the answer to the age old question: Are we alone? *Halt simulation* Listen up Men In Black Recruits, you’ve been chosen to participate in a training mission but if it goes wrong, it’ll be good to have some help defending the galaxy against the worst of the aliens. *End simulation* Of course we’re alone!"
+blurb: Save the world from alien invaders!
+technicaldesc: A dark ride with occasional intense spinning in which riders shoot targets and accumulate points.
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Themed Description</h2>
+            <p>
+                {{page.marketingp}}
+            </p>
+            <h2>Technical Description</h2>
+            <p>
+                {{page.technicaldesc}}
+            </p>
+            <h2>Ride Stats</h2>
+            <ul>
+                <li><strong>Duration</strong> • 4:20</li>
+                <li><strong>Length</strong> • 1090 ft</li>
+                <li><strong>Manufacturer</strong> • MTS Systems Corporation</li>
+            </ul>
+
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-4">
+            <h2>Current Wait Time</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Quick Facts</h2>
+            <p>
+                <ul>
+                    <li>Set at the 1964 World's Fair.</li>
+                    <li>Replaced a Back to the Future III locomotive display.</li>
+                    <li>The ride's fog machines uses 70,000 gallons of liquid nitrogen every day.</li>
+                    <li>If you shake the handles on some of the doors in the queue, you might hear an alien's message
+                        for you!</li>
+                    <li>If you look at the windows as you ride through the New York City scene in the ride, you'll see
+                        storefronts for "I.M. Hotep Jewelry Store" and "Flaming Moe's Bar" which are references to
+                        Revenge of the Mummy and The Simpsons respectively.</li>
+                    <li>If you look right before you enter the scanners, you'll see an alien holding up a newspaper.
+                        When he drops it, you'll see that it's Steven Spielberg himself.</li>
+                    <li>On the far right side of the red side of the ride, you can see Frank the Pug in the newspaper
+                        stand. Hit him for extra points!</li>
+                    <li>During quiet times, ask a cast member for an Immigration Tour and you can go behind the scenes
+                        of the ride!</li>
+                    <li>There are two different endings for the ride depending on your car's score.</li>
+                    <li>The max score available is 999,999.</li>
+                    <li>Opened on April 14, 2000.</li>
+                </ul>
+            </p>
+            <h2>The Story</h2>
+            <p>
+                The posters and decorations in line point to a World's Fair exhibit named The Universe and You. We enter
+                into a room full of stained glass and an attendent starts a narration that introduces us to our Universe
+                and You exhibit. Until suddenly the narration comes to a halt and a voice welcomes us recruits to the
+                Men In Black training facility. The wall opens and an MIB agent tells us to get into teh elevator. After
+                we get out of the elevator, we queue past various MIB aliens and props. We then enter the immigration
+                room where aliens from the ride oversee the various extraterrestrial activities with alarms going off
+                every so often when aliens threaten to blow up Earth. Eventually we make our way to the main part of the
+                building where we board our vehicles and start off on our training. We enter the training room and blast
+                the targets until MIB Director Zedd tells us that a prison transport ship crashed in NYC and he needs
+                our help to round them up. We go through a New York street packed full of aliens. We go into an alley
+                and get ambushed by an alien and spin out of control. We then go through a scanner facing the other
+                track's cars and find out that they're really aliens. If we hit their fusion exhaust port over their
+                ride vehicle they wpin out of control, but so do we if they hit ours. Finally, Agent J comes on the TVs
+                at Times Square anf tells us that there's one massive alien that escaped. As we round the corner we can
+                see him but our guns have no effect. We enter his mouth only to be told to push our red button and
+                deploy our Subatmoic Thermonuclear Disruptor which defeats the alien. J comes on the screen again at
+                this point and congratulates whichever side had more points. We see whichever ending of the ride our car
+                earned and then are neuralyzed so we don't remember anything of it. We pull back into the station to a
+                huge sign telling us that of course we're alone in the universe!
+            </p>
+            <h2>Photos</h2>
+            {% if page.numPics == 0 %}
+            <p>We're out gathering pictures now! But none right now.</p>
+            {% else %}
+            <div class="container">
+                <div class="row">
+                    {% for i in (1..page.numPics) %}
+                    <div class="col-md-6 my-3">
+                        <a href="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" data-toggle="lightbox"
+                            data-gallery="{{page.name}}">
+                            <img class="img-fluid" src="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg"
+                                alt="{{page.name}}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            <h2>Videos</h2>
+            <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=n5lduwnyS0k" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/n5lduwnyS0k/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=moK-TzzKETo" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/moK-TzzKETo/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=s-oWmgYYyLE" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/s-oWmgYYyLE/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Updates, News, Articles and Rumors</h2>
+            {% assign psize = site.categories.mib | size %}
+            {% if psize == 0 %}
+            <p>No posts ... yet!</p>
+            {% endif %}
+            <div class="row">
+                {% for post in site.categories.mib %}
+                <div class="col-md-6">
+                    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}"
+                            itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+                    <p class="">
+                        {% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
