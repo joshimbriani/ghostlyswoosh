@@ -10,127 +10,129 @@ blurb: Take an exciting journey through Gringotts bank!
 technicaldesc: A roller coaster ride featuring some spinning and several high speed drops and turns.
 ---
 <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <h2>Themed Description</h2>
-                <p>
-                    {{page.marketingp}}
-                </p>
-                <h2>Technical Description</h2>
-                <p>
-                    {{page.technicaldesc}}
-                </p>
-                <h2>Ride Stats</h2>
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Themed Description</h2>
+            <p>
+                {{page.marketingp}}
+            </p>
+            <h2>Technical Description</h2>
+            <p>
+                {{page.technicaldesc}}
+            </p>
+            <h2>Ride Stats</h2>
+            <ul>
+                <li><strong>Length</strong> • 2000 ft</li>
+                <li><strong>Duration</strong> • 5:00</li>
+                <li><strong>Max Angle of Descent</strong> • 50*</li>
+                <li><strong>Manufacturer</strong> • Intamin Amusement Rides</li>
+            </ul>
+
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-4">
+            <h2>Current Wait Time</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Quick Facts</h2>
+            <p>
                 <ul>
-                    <li><strong>Length</strong> • 2000 ft</li>
-                    <li><strong>Duration</strong> • 5:00</li>
-                    <li><strong>Max Angle of Descent</strong> • 50*</li>
-                    <li><strong>Manufacturer</strong> • Intamin Amusement Rides</li>
+                    <li>The four chandeliers in the lobby of the bank contain 62,000 crystals.</li>
+                    <li>The elevator in the queue actually does not move.</li>
+                    <li>In addition to the cars spinning, the cars also tilt horizontally on a dedicated tilt track.
+                    </li>
                 </ul>
-                
-            </div>
-            <div class="col-md-1">
-                
-            </div>
-            <div class="col-md-4">
-                <h2>Current Wait Time</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Quick Facts</h2>
-                <p>
-                    <ul>
-                        <li>The four chandeliers in the lobby of the bank contain 62,000 crystals.</li>
-                        <li>The elevator in the queue actually does not move.</li>
-                        <li>In addition to the cars spinning, the cars also tilt horizontally on a dedicated tilt track.</li>
-                    </ul>
-                </p>
-                <h2>The Story</h2>
-                <p>
-                    We start our adventure by entering the Gringotts lobby. We've been invited in as muggles to tour the vault. We walk past the goblins and down the stairs to a room where Gringotts employees take our pictures and point us in the right direction. As we wait, we can hear Harry, Ron and Hermione planning their break-in to Gringotts, although at this point, they don't know we're here. We're lead into a room where We go into a room where a goblin explains some safety rules for us and beckons us into an elevator that'll take us down to Gringotts. We descend
-                </p>
-                <h2>Photos</h2>
-                {% if page.numPics == 0 %}
-                    <p>We're out gathering pictures now! But none right now.</p> 
-                {% else %}
-                    <div class="container">
-                        <div class="row">
-                            {% for i in (1..page.numPics) %}
-                                <div class="col-md-6 my-3">
-                                    <a href="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" data-toggle="lightbox" data-gallery="{{page.name}}">
-                                        <img class="img-fluid" src="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" alt="{{page.name}}">
-                                    </a>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div> 
-                {% endif %}
-                <h2>Videos</h2>
-                <p>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 my-3">
-                                <a href="https://www.youtube.com/watch?v=q8orPZ3-dXs" data-toggle="lightbox" data-gallery="{{page.name}}videos">
-                                    <img class="img-fluid" src="https://img.youtube.com/vi/q8orPZ3-dXs/0.jpg" alt="{{page.name}}">
-                                </a>
-                            </div>
-                            <div class="col-md-6 my-3">
-                                <a href="https://www.youtube.com/watch?v=drQICh39ugU" data-toggle="lightbox" data-gallery="{{page.name}}videos">
-                                    <img class="img-fluid" src="https://img.youtube.com/vi/drQICh39ugU/0.jpg" alt="{{page.name}}">
-                                </a>
-                            </div>
-                            <div class="col-md-6 my-3">
-                                <a href="https://www.youtube.com/watch?v=MmBXNw_Iv7s" data-toggle="lightbox" data-gallery="{{page.name}}videos">
-                                    <img class="img-fluid" src="https://img.youtube.com/vi/MmBXNw_Iv7s/0.jpg" alt="{{page.name}}">
-                                </a>
-                            </div>
-                            <div class="col-md-6 my-3">
-                                <a href="https://www.youtube.com/watch?v=eD5CbRf0r4I" data-toggle="lightbox" data-gallery="{{page.name}}videos">
-                                    <img class="img-fluid" src="https://img.youtube.com/vi/eD5CbRf0r4I/0.jpg" alt="{{page.name}}">
-                                </a>
-                            </div>
-                            <div class="col-md-6 my-3">
-                                <a href="https://www.youtube.com/watch?v=QPmigUri0Xo" data-toggle="lightbox" data-gallery="{{page.name}}videos">
-                                    <img class="img-fluid" src="https://img.youtube.com/vi/QPmigUri0Xo/0.jpg" alt="{{page.name}}">
-                                </a>
-                            </div>
-                            <div class="col-md-6 my-3">
-                                <a href="https://www.youtube.com/watch?v=aPaXnDO_t6w" data-toggle="lightbox" data-gallery="{{page.name}}videos">
-                                    <img class="img-fluid" src="https://img.youtube.com/vi/aPaXnDO_t6w/0.jpg" alt="{{page.name}}">
-                                </a>
-                            </div>
-                            <div class="col-md-6 my-3">
-                                <a href="https://www.youtube.com/watch?v=9z66nqs1cJw" data-toggle="lightbox" data-gallery="{{page.name}}videos">
-                                    <img class="img-fluid" src="https://img.youtube.com/vi/9z66nqs1cJw/0.jpg" alt="{{page.name}}">
-                                </a>
-                            </div>
-                            <div class="col-md-6 my-3">
-                                <a href="https://www.youtube.com/watch?v=H02jTkX7aOg" data-toggle="lightbox" data-gallery="{{page.name}}videos">
-                                    <img class="img-fluid" src="https://img.youtube.com/vi/H02jTkX7aOg/0.jpg" alt="{{page.name}}">
-                                </a>
-                            </div>
-                        </div>
-                    </div> 
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Updates, News, Articles and Rumors</h2>
-                {% assign psize = site.categories.rotm | size %}
-                {% if psize == 0 %} 
-                    <p>No posts ... yet!</p>
-                {% endif %}
+            </p>
+            <h2>The Story</h2>
+            <p>
+                We start our adventure by entering the Gringotts lobby. We've been invited in as muggles to tour the
+                vault. We walk past the goblins and down the stairs to a room where Gringotts employees take our
+                pictures and point us in the right direction. As we wait, we can hear Harry, Ron and Hermione planning
+                their break-in to Gringotts, although at this point, they don't know we're here. We're lead into a room
+                where We go into a room where a goblin explains some safety rules for us and beckons us into an elevator
+                that'll take us down to Gringotts. We descend into the depths of Gringotts banks and step out at the
+                base of a large spiral staircase. After we grab our safety goggles, we climb to the top of the staircase
+                and enter our vehicle. We pull into a large cavern and see Bill Weasley and his Gringotts escort ahead
+                of us when suddenly the alarms go off and we're warned that there are imposters in Gringotts. Then to
+                our right comes Bellatrix Lestrange. She tests if we're imposters by casting a spell that causes the
+                track we're sitting on to tilt, leaving us hanging over an abyss. We plummet down and speed away only to
+                come to a stop at the hands of Bill's spell. After he stops us we see Harry, Ron and Hermione speed by
+                in their own cart after stealing a Horcrux. Security trolls reach up and grab our car, spinning it into
+                the next room. As they wind up to hit us with their clubs, they trip and drag us down into the caves
+                until we're stopped by Bill again. A dragon bursts through the cavern with Harry and company on its
+                back. Bill sends us on our way as Gringotts security staff tries to stop the dragon. We enter the vault
+                area where we see our frienly goblin beckoning us to safety. As we follow his instructions, a snake
+                breaks through the wall and lunges at us until it is stopped by Voldemort and Bellatrix! He questions us
+                and Bellatrix casts a spell on us as we go into the next room, a lava filled cavern. Voldemort appears
+                and casts a fireball spell at us which nearly hits us until the dragon bursts through the cave and blows
+                its own fire to knock the fireball out of the way. As Voldemort and Bellatrix flee, Harry hooks us to
+                the dragon and our carts get pulled to safety. The last thing we see before we get back to the station
+                is Bill telling us that Gringotts is still the safest place on Earth!
+            </p>
+            <h2>Photos</h2>
+            {% if page.numPics == 0 %}
+            <p>We're out gathering pictures now! But none right now.</p>
+            {% else %}
+            <div class="container">
                 <div class="row">
-                    {% for post in site.categories.rotm %}
-                        <div class="col-md-6">
-                            <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-                            <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
-                            <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
-                        </div>
+                    {% for i in (1..page.numPics) %}
+                    <div class="col-md-6 my-3">
+                        <a href="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" data-toggle="lightbox"
+                            data-gallery="{{page.name}}">
+                            <img class="img-fluid" src="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg"
+                                alt="{{page.name}}">
+                        </a>
+                    </div>
                     {% endfor %}
                 </div>
             </div>
+            {% endif %}
+            <h2>Videos</h2>
+            <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=TAeG_CzTyYQ" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/TAeG_CzTyYQ/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=H_ZTo4b0u94?t=187" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/H_ZTo4b0u94/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </p>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Updates, News, Articles and Rumors</h2>
+            {% assign psize = site.categories.rotm | size %}
+            {% if psize == 0 %}
+            <p>No posts ... yet!</p>
+            {% endif %}
+            <div class="row">
+                {% for post in site.categories.rotm %}
+                <div class="col-md-6">
+                    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}"
+                            itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+                    <p class="">
+                        {% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
