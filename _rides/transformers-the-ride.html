@@ -3,29 +3,130 @@ name: Transformers&#58; The Ride 3D
 type: ride
 layout: ride
 imagePrefix: transformers
-cover: transformers.jpg
-icon: transformers.jpg
+numPics: 3
 area: New York
 marketingp: NEST is preparing to transport the All Spark to another facility but we’ve heard rumors that Megatron and the Decpticons are preparing to intercept the transport. That’s why we’re looking for recruits to ride along with the Autobot Evac and make sure that the All Spark stays safe!
 blurb: Help protect NEST from Megatron!
 technicaldesc: A dark ride featuring quick movements and 4D effects.
 ---
 
-<div class="row">
-    <div class="col-md-8">
-        <h2>Quick Facts</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Themed Description</h2>
+            <p>
+                {{page.marketingp}}
+            </p>
+            <h2>Technical Description</h2>
+            <p>
+                {{page.technicaldesc}}
+            </p>
+            <h2>Ride Stats</h2>
+            <ul>
+                <li><strong>Length</strong> • 2000 ft</li>
+                <li><strong>Duration</strong> • 4:30</li>
+                <li><strong>Cost</strong> • $100,000,000</li>
+            </ul>
+
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-4">
+            <h2>Current Wait Time</h2>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Current Wait Time</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Quick Facts</h2>
+            <p>
+                <ul>
+                    <li>Exact clones of the ride also exist at Universal Studios Hollywood and Singapore.</li>
+                    <li>Uses the Amazing Adventures of Spiderman ride system.</li>
+                    <li>Takes place on two levels. During a scene, an elevator takes the ride vehicles from the first to
+                        the second level.</li>
+                    <li>Opened on June 20, 2012</li>
+                </ul>
+            </p>
+            <h2>The Story</h2>
+            <p>
+                We enter the queue to a NEST facility under seige with alarms blaring all around us. Through video
+                briefings, we learn that Decepticons are attacking the facility looking for the AllSpark. We hear from
+                Optimus Prime who tells us taht our mission is to accompany Evac in getting the AllSpark out of the
+                facility. We pick up our safety goggles and get ready for our adventure. After we board Evac, we
+                immediately run into Ravage who grabs the AllSpark from us. Turning around, we see Bumblebee fighting
+                Sideways and getting us the AllSpark back. We start to escape but encounter Megatron fighting Optimus
+                Prime. Megatron grabs us until we're able to break away after the water pipe he's holding onto breaks
+                off. We look for a way out only to turn around to Megatron shooting a missile at us. We manage to get
+                out of the building through the hole created by the explosion. As soon as we get outside Devastator
+                immediately starts suctioning up everything in our path but we're able to reverse and get away. After we
+                get some assistance from Sideswipe getting past Bonecrusher, we run into Devastator again. But instead
+                of running this time, we engage our shields and go right through him. As soon as we get free of
+                Devastator Starscream grabs us and throws us across the city. We run across Optimus fighting Megatron
+                again with Optimus starting to lose. Instead of running this time, we jam the AllSpark in Megatron's
+                chest, causing him to overload. Bumblebee catches us from our fall and Optimus thanks us for our help.
+                We then disembark and enter the Transformers Supply Vault gift shop.
+            </p>
+            <h2>Photos</h2>
+            {% if page.numPics == 0 %}
+            <p>We're out gathering pictures now! But none right now.</p>
+            {% else %}
+            <div class="container">
+                <div class="row">
+                    {% for i in (1..page.numPics) %}
+                    <div class="col-md-6 my-3">
+                        <a href="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" data-toggle="lightbox"
+                            data-gallery="{{page.name}}">
+                            <img class="img-fluid" src="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg"
+                                alt="{{page.name}}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            <h2>Videos</h2>
+            <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=SuWqc53Yuqk" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/SuWqc53Yuqk/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=AYixUo62vDo" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/AYixUo62vDo/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <h2>Photos</h2>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <h2>Updates, News and Rumors</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Updates, News, Articles and Rumors</h2>
+            {% assign psize = site.categories.transformers | size %}
+            {% if psize == 0 %}
+            <p>No posts ... yet!</p>
+            {% endif %}
+            <div class="row">
+                {% for post in site.categories.transformers %}
+                <div class="col-md-6">
+                    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}"
+                            itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+                    <p class="">
+                        {% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
