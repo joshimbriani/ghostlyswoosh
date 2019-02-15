@@ -3,29 +3,145 @@ name: Race Through New York Starring Jimmy Fallon
 type: ride
 layout: ride
 imagePrefix: fallon
-cover: fallon.jpg
-icon: fallon.jpg
+numPics: 2
 area: New York
 marketingp: Have you ever wanted to be a part of the Jimmy Fallon show? Well now’s your chance! Jimmy has tickets saved for you to be a part of his audience! Enjoy the tonight show building and its history exhibits for the various Tonight Show hosts, live performances by Hashtag the Panda and the Ragtime Gals as well as the main attraction, a race through New York City between Jimmy and the audience, you!
 blurb: Race through New York with Jimmy Fallon!
 technicaldesc: A simulator ride with moving seats simulating a race with 4D effects.
 ---
 
-<div class="row">
-    <div class="col-md-8">
-        <h2>Quick Facts</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Themed Description</h2>
+            <p>
+                {{page.marketingp}}
+            </p>
+            <h2>Technical Description</h2>
+            <p>
+                {{page.technicaldesc}}
+            </p>
+            <h2>Ride Stats</h2>
+            <ul>
+                <li><strong>Duration</strong> • 4:00</li>
+                <li><strong>Manufacturer</strong> • Dynamic Attractions</li>
+            </ul>
+
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-4">
+            <h2>Current Wait Time</h2>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Current Wait Time</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Quick Facts</h2>
+            <p>
+                <ul>
+                    <li>Jimmy Fallon actually pitched the idea for this ride when he was the host of Late Night</li>
+                    <li>Built on a first of its kind ride system.</li>
+                    <li>Jimmy taped an episode of the Tonight Show at Universal for the opening of the ride.</li>
+                    <li>Opened on April 6, 2017</li>
+                </ul>
+            </p>
+            <h2>The Story</h2>
+            <p>
+                As we enter, we get a card with a color on it. We then wait in a main lobby filled with memorabilia from
+                all of the Tonight Show hosts until our color flashes on the lights above us. That lets us know it's
+                time to go to the second lobby upstairs. The second lobby has benches with games to play and outlets to
+                charge our phone. We can see plenty of TVs with clips from Jimmy's run on the Tonight Show. Every so
+                often, we also can watch a live performance of a capella from the Ragtime Gals or Hashtag the Panda.
+                Eventually our light flashes overhead again and we know it's time to ride. We are led into a preshow
+                room and introduced to Jimmy Fallon. He tells us about what sights we'll see on our race through New
+                York and has The Roots rap the safety procedure. After the rap is finished, Sara (with no h because h
+                are ew!) and Gary interrupts the monologue before Jimmy kicks them out since the ride isn't ready yet.
+                We are then led to the ride vehicles. After we get situated in the theater, the race kicks off and we
+                race through the Tonight Show halls until we break through the wall into the streets of New York. We
+                enter the subway and almost get crushed by an oncoming subway. We make our way to street level again and
+                our race car turns into a hovercraft and we take off behind Jimmy. We dive into the East River and
+                narrowly escape a shark before coming back up and flying to the Statue of Liberty where we run into a
+                giant Hashtag the Panda. He grabs us and throws us up to the Moon. As we race across the Moon, we see
+                the Roots playing on the moon and listen to Jimmy write a Thank You Card. We then get attached to a
+                roller coaster launcher that launches us back to the Earth. It's not complete yet so Jimmy shoots out
+                hypertubes to take use safely back to the studio. It's neck and neck as we reach the finish line only
+                for us to beat Jimmy by a hair. He congratulates us and we exit to the gift shop.
+            </p>
+            <h2>Photos</h2>
+            {% if page.numPics == 0 %}
+            <p>We're out gathering pictures now! But none right now.</p>
+            {% else %}
+            <div class="container">
+                <div class="row">
+                    {% for i in (1..page.numPics) %}
+                    <div class="col-md-6 my-3">
+                        <a href="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg" data-toggle="lightbox"
+                            data-gallery="{{page.name}}">
+                            <img class="img-fluid" src="{{site.baseurl}}/images/rides/{{ page.imagePrefix }}{{i}}.jpg"
+                                alt="{{page.name}}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            <h2>Videos</h2>
+            <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=mmWg9SO13IY" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/mmWg9SO13IY/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=2yYZbxw3pnQ" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/2yYZbxw3pnQ/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=Hl9hwB2VIr4" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/Hl9hwB2VIr4/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <a href="https://www.youtube.com/watch?v=ac1b8Rb9MME" data-toggle="lightbox"
+                                data-gallery="{{page.name}}videos">
+                                <img class="img-fluid" src="https://img.youtube.com/vi/ac1b8Rb9MME/0.jpg"
+                                    alt="{{page.name}}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </p>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <h2>Photos</h2>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <h2>Updates, News and Rumors</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Updates, News, Articles and Rumors</h2>
+            {% assign psize = site.categories.rotm | size %}
+            {% if psize == 0 %}
+            <p>No posts ... yet!</p>
+            {% endif %}
+            <div class="row">
+                {% for post in site.categories.rotm %}
+                <div class="col-md-6">
+                    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+                    <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}"
+                            itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+                    <p class="">
+                        {% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
