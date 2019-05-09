@@ -1,25 +1,25 @@
 ---
 layout: page
 ---
-<div class="picture-header row">
-    <div class="col-third header-text">
-            <h1>{{page.name}}</h1>
-            <h2>{{page.tagline}}</h2>
-    </div>
-</div>
-<div class="basicinfo-rides row">
-    <div class="col-23">
-        {{page.content}}
-    </div>
-    <div class="col-13">
-        <div class="rides">
-            <!--For each ride in area - listed in front matter? Dynamically figure it out?-->
+<header class="masthead" style="background-image: url('../images/rides/cover/{{page.imagePrefix}}.jpg')">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-4">
+                <div class="intro-text">
+                    <div class="intro-heading text-uppercase">{{ page.name }}</div>
+                    <div class="intro-lead-in">{{page.blurb}}</div>
+                </div>
+            </div>
+            <div class="col-md-7">
+
+            </div>
         </div>
     </div>
-</div>
-<div class="media row">
-    <div class="col media"></div>
-</div>
-<div class="updates row">
-    <div class="col updates"></div>
-</div>
+</header>
+
+<main style="margin-top: 20px;">
+    {{ content }}
+</main>
